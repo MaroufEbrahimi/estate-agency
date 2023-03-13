@@ -36,3 +36,22 @@ a:hover {
   color: #2eca6a;
   text-decoration: none;
 }
+
+/* Scroll bar */
+::-webkit-scrollbar {
+  width: 13px;
+  transition: all 2s ease-in-out;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2eca6a;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #26a356;
+}
