@@ -17,3 +17,22 @@ body {
   font-family: "Poppins", sans-serif;
   color: #555;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000;
+}
+
+a {
+  color: #000;
+  transition: all 0.5s ease;
+}
+
+a:hover {
+  color: #2eca6a;
+  text-decoration: none;
+}
