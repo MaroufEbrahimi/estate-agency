@@ -1,9 +1,11 @@
 import React from "react";
 
+import Header from "../src/components/Header/Header";
+
 const App = () => {
   return (
     <div className="app">
-      <h1>Estate Egency</h1>
+      <Header />
     </div>
   );
 };
