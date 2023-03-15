@@ -1,15 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 
 import "./Header.css";
 
-const Header = () => {
-  const [show, handleShow] = useState(false);
-
+const Header = (props) => {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 90) {
-        handleShow(true);
-      } else handleShow(false);
+        props.handleShow(true);
+      } else props.handleShow(false);
     });
     return () => {
       window.removeEventListener("scroll");
@@ -17,7 +15,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className={`header ${show && "header__height"}`}>
+    <div className={`header ${props.show && "header__height"}`}>
       <div className="header_logo">
         <a href="/">
           Estate<span>Agency</span>
