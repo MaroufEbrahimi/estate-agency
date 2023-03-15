@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Header from "../src/components/Header/Header";
 
@@ -7,8 +8,10 @@ const App = () => {
 
   return (
     <div className="app">
-      <Header show={show} handleShow={handleShow} />
-      <div style={{ height: "200vh" }}></div>
+      <Router>
+        <Header show={show} handleShow={handleShow} />
+        <div style={{ height: "200vh" }}></div>
+      </Router>
     </div>
   );
 };
