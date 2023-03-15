@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Header from "../src/components/Header/Header";
 
 const App = () => {
+  const [show, handleShow] = useState(false);
+
   return (
     <div className="app">
-      <Header />
+      <Header show={show} handleShow={handleShow} />
+      <div style={{ height: "200vh" }}></div>
     </div>
   );
 };
