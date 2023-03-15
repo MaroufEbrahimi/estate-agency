@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import "./Header.css";
 import SearchIcon from "@mui/icons-material/Search";
@@ -18,30 +19,30 @@ const Header = (props) => {
   return (
     <div className={`header ${props.show && "header__height"}`}>
       <div className="header_logo">
-        <a href="/">
+        <Link to="/">
           Estate<span>Agency</span>
-        </a>
+        </Link>
       </div>
 
       <div className="nav_links">
         <ul>
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/about">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <a href="/property">Property</a>
+            <Link to="/property">Property</Link>
           </li>
           <li>
-            <a href="/blog">Blog</a>
+            <Link to="/blog">Blog</Link>
           </li>
           <li>
-            <a href="/pages">Pages</a>
+            <Link to="/pages">Pages</Link>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </div>
