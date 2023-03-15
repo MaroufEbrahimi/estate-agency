@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 
 import "./Header.css";
+import SearchIcon from "@mui/icons-material/Search";
 
 const Header = (props) => {
   useEffect(() => {
@@ -45,8 +46,10 @@ const Header = (props) => {
         </ul>
       </div>
 
-      <div className="header_search_icon">
-        <i>a</i>
+      <div className="header_search">
+        <button>
+          <SearchIcon className="header_search_icon" />
+        </button>
       </div>
     </div>
   );
