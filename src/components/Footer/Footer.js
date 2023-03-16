@@ -2,10 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import "./Footer.css";
+import FooterDetails from "./FooterDetails/FooterDetails";
 
 const Footer = () => {
   return (
     <div className="footer">
+      <FooterDetails />
+
       <div className="footer_container">
         <div className="footer_links">
           <div className="footer_private_links">
