@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
-const Layout = () => {
+import Wrapper from "../../hoc/Wrapper";
+
+const Layout = (props) => {
   return (
-    <div>Layout</div>
-  )
-}
+    <Wrapper>
+      <main>{props.children}</main>
+    </Wrapper>
+  );
+};
 
-export default Layout
+export default Layout;
