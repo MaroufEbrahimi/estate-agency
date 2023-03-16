@@ -1,0 +1,36 @@
+.footer_details {
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-gap: 6rem;
+}
+
+.footer_details_box h1 {
+  text-transform: capitalize;
+  color: #000;
+  font-size: 2rem;
+  letter-spacing: 0.01em;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer_details_box p {
+  color: #555;
+  margin-top: 15px;
+  line-height: 1.5em;
+}
+
+.footer_details_box p span {
+  color: #000;
+}
+
+.footer_details_box li {
+  list-style: none;
+  line-height: 1.9em;
+}
+
+.fa-angle-right {
+  color: #2eca6a;
+  font-size: 20px;
+  margin-right: 4px;
+}
