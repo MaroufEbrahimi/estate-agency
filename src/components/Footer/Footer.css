@@ -1,0 +1,39 @@
+.footer {
+  background: #f3f3f3;
+  padding: 60px 6% 20px 6%;
+  margin-top: 60px;
+}
+
+.footer_links {
+  border-bottom: 1px solid #cbcbcb;
+}
+
+.footer_private_links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.footer_private_links a {
+  margin: 8px;
+  text-transform: capitalize;
+}
+
+.footer_copyright {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.footer_copyright p {
+  margin: 20px 0;
+  text-transform: capitalize;
+}
+
+.footer_copyright p span {
+  color: #000;
+}
+
+.footer_copyright p:last-child {
+  font-size: 15px;
+}
