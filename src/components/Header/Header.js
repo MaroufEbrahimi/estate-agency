@@ -48,7 +48,7 @@ const Header = (props) => {
       </div>
 
       <div className="header_search">
-        <button>
+        <button onClick={props.headerSearch}>
           <SearchIcon className="header_search_icon" />
         </button>
       </div>
