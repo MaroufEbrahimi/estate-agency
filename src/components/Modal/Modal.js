@@ -13,7 +13,15 @@ const Modal = (props) => {
         removeModal={props.removeModal}
       />
 
-      <div className="modal">{props.children}</div>
+      <div
+        className="modal"
+        style={{
+          transform: props.showBackdrop ? "translateX(0)" : "translateX(150vh)",
+          opacity: props.showBackdrop ? "1" : "0",
+        }}
+      >
+        {props.children}
+      </div>
     </Wrapper>
   );
 };
