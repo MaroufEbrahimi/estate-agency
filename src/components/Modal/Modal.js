@@ -1,11 +1,21 @@
-import React from 'react'
+import React from "react";
 
-import './Modal.css'
+import "./Modal.css";
 
-const Modal = () => {
+import Wrapper from "../../hoc/Wrapper";
+import Backdrop from "./Backdrop/Backdrop";
+
+const Modal = (props) => {
   return (
-    <div>Modal</div>
-  )
-}
+    <Wrapper>
+      <Backdrop
+        showBackdrop={props.showBackdrop}
+        removeModal={props.removeModal}
+      />
 
-export default Modal
+      <div className="modal">{props.children}</div>
+    </Wrapper>
+  );
+};
+
+export default Modal;
