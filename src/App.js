@@ -5,6 +5,7 @@ import Header from "../src/components/Header/Header";
 import Footer from "../src/components/Footer/Footer";
 import Layout from "../src/components/Layout/Layout";
 import Modal from "./components/Modal/Modal";
+import ModalContent from "./components/Modal/ModalContent/ModalContent";
 
 const App = (props) => {
   const [show, handleShow] = useState(false);
@@ -20,7 +21,9 @@ const App = (props) => {
 
   return (
     <div className="app">
-      <Modal showBackdrop={showModal} removeModal={modalCloseHandler}></Modal>
+      <Modal showBackdrop={showModal} removeModal={modalCloseHandler}>
+        <ModalContent />
+      </Modal>
       <Router>
         <Header
           show={show}
