@@ -1,0 +1,21 @@
+.search_property_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search_property_title h1 {
+  color: #000;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.search_property_title button {
+   background: transparent;
+   color: #000;
+   font-size: 40px;
+   font-weight: 700;
+   border: none;
+   outline: none;
+   cursor: pointer;
+}
