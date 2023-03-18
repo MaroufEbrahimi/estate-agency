@@ -1,11 +1,12 @@
 .modal {
   position: fixed;
   width: 50%;
+  height: 100%;
   top: 0;
   right: 0;
   background: #fff;
   box-sizing: border-box;
-  padding: 16px;
+  padding: 30px 50px 70px 50px;
   transition: all 0.5s ease-in-out;
   z-index: 500;
 }
