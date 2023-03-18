@@ -22,7 +22,7 @@ const App = (props) => {
   return (
     <div className="app">
       <Modal showBackdrop={showModal} removeModal={modalCloseHandler}>
-        <ModalContent />
+        <ModalContent removeModal={modalCloseHandler} />
       </Modal>
       <Router>
         <Header
