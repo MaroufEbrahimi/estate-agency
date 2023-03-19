@@ -6,6 +6,7 @@ import Footer from "../src/components/Footer/Footer";
 import Layout from "../src/components/Layout/Layout";
 import Modal from "./components/Modal/Modal";
 import ModalContent from "./components/Modal/ModalContent/ModalContent";
+import Home from './components/Home/Home'
 
 const App = (props) => {
   const [show, handleShow] = useState(false);
@@ -32,6 +33,7 @@ const App = (props) => {
         />
         <Layout>
           <div style={{ height: "200vh" }}></div>
+          <Home />
         </Layout>
         <Footer />
       </Router>
