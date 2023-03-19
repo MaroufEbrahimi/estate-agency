@@ -1,5 +1,7 @@
 import React from "react";
 
+import LatestProperty from "../LatestProperty/LatestProperty";
+
 import "./Home.css";
 
 const Home = () => {
@@ -59,6 +61,11 @@ const Home = () => {
             </a>
           </div>
         </div>
+      </div>
+
+      {/* LatestProperty */}
+      <div className="latest_property">
+        <LatestProperty />
       </div>
     </div>
   );
