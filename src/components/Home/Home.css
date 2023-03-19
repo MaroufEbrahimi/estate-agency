@@ -2,6 +2,12 @@
   padding: 30px 9%;
 }
 
+.our_services > h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
 .our_services_columns {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
@@ -32,4 +38,29 @@
   margin: 15px 0;
   font-size: 16.4px;
   line-height: 1.5em;
+}
+
+/* media queries */
+@media (max-width: 1141px) {
+  .home {
+    padding: 30px 4%;
+  }
+}
+
+@media (max-width: 991px) {
+  .our_services_columns {
+    grid-gap: 1.5rem;
+  }
+  .our_services_title h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .our_services_columns {
+    grid-template-columns: 1fr;
+  }
+  .our_services_title h2 {
+    font-size: 2.3rem;
+  }
 }
