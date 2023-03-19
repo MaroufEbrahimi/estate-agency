@@ -6,7 +6,17 @@
   right: 0;
   background: #fff;
   box-sizing: border-box;
-  padding: 30px 50px 70px 50px;
+  padding: 30px 70px 70px 70px;
   transition: all 0.5s ease-in-out;
   z-index: 500;
+  scroll-snap-type: x mandatory;
+  overflow: auto;
+}
+
+/* media queries */
+@media (max-width: 768px) {
+  .modal {
+    width: 100%;
+    padding: 30px 50px 70px 50px;
+  }
 }
