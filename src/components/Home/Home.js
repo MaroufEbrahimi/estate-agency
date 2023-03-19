@@ -1,8 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import LatestProperty from "../LatestProperty/LatestProperty";
 
 import "./Home.css";
+
+// Latest property images
+import property_1 from "../../assets/latest-property/property-1.jpg";
+import property_2 from "../../assets/latest-property/property-2.jpg";
+import property_3 from "../../assets/latest-property/property-3.jpg";
+import property_4 from "../../assets/latest-property/property-4.jpg";
 
 const Home = () => {
   return (
@@ -65,7 +72,38 @@ const Home = () => {
 
       {/* LatestProperty */}
       <div className="latest_property">
-        <LatestProperty />
+        <div className="latest_property_title">
+          <h1>Latest Properties</h1>
+          <Link to="/property">
+            All Property <span className="fa fa-angle-right"></span>
+          </Link>
+        </div>
+        <div className="latest_property_boxes">
+          <div className="latest_property_box">
+            <LatestProperty
+              img={property_1}
+              title="206 Mount Olive Road Two"
+              rent="RENT | $ 12.000"
+              view="Click here to view"
+            />
+          </div>
+          <div className="latest_property_box">
+            <LatestProperty
+              img={property_2}
+              title="157 West Central Park"
+              rent="RENT | $ 12.000"
+              view="Click here to view"
+            />
+          </div>
+          <div className="latest_property_box">
+            <LatestProperty
+              img={property_3}
+              title="245 Azabu Nishi Park Let"
+              rent="RENT | $ 12.000"
+              view="Click here to view"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
