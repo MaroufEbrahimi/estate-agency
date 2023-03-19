@@ -44,3 +44,56 @@
 .latest_property_details:hover img {
   transform: scale(1.2);
 }
+
+.property_img_layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-image: linear-gradient(to top, rgb(1, 1, 1, 0.8), transparent);
+}
+
+.property_img_details {
+  position: absolute;
+  width: 70%;
+  bottom: 8%;
+  transition: all 0.8s;
+  color: #fff;
+}
+
+.property_img_details > h3 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 200;
+  line-height: 1.1em;
+}
+
+.property_img_details > p {
+  margin: 15px 0;
+  width: 155px;
+  height: 45px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 100;
+  background: transparent;
+  border: 2px solid #2eca6a;
+  border-radius: 50px;
+  letter-spacing: 0.02em;
+}
+
+.property_img_details > a {
+  color: #fff;
+  letter-spacing: 0.02em;
+  font-size: 16px;
+}
+
+.property_img_details > i {
+  color: #fff;
+  font-size: 22px;
+}
