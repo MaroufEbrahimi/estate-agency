@@ -1,0 +1,35 @@
+.home {
+  padding: 30px 9%;
+}
+
+.our_services_columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  grid-gap: 3rem;
+  margin-top: 3rem;
+}
+
+.our_services_title {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.our_services_title span {
+  color: #000;
+  font-size: 5rem;
+  width: 180px;
+  border: 5.5px solid #2eca6a;
+  text-align: center;
+  margin-right: -37px;
+}
+
+.our_services_title h2 {
+  font-size: 2.3rem;
+}
+
+.our_services_col p {
+  margin: 15px 0;
+  font-size: 16.4px;
+  line-height: 1.5em;
+}
