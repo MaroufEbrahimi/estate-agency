@@ -1,0 +1,46 @@
+.latest_property {
+  margin-top: 90px;
+}
+
+.latest_property_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.latest_property_title > h1 {
+  font-size: 2.5rem;
+}
+
+.latest_property_title > a {
+  color: #000;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+}
+
+.latest_property_title > a span {
+  color: #000;
+  font-size: 1.6rem;
+}
+
+.latest_property_boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-gap: 2rem;
+  margin-top: 4rem;
+}
+
+.latest_property_details {
+  position: relative;
+  overflow: hidden;
+}
+
+.latest_property_details img {
+  max-width: 100%;
+  object-fit: cover;
+  transition: all 0.8s ease-in-out;
+}
+
+.latest_property_details:hover img {
+  transform: scale(1.2);
+}
