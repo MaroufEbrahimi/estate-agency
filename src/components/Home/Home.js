@@ -115,7 +115,7 @@ const Home = () => {
       <div className="best_agents">
         <div className="best_agents_title">
           <h1>Best Agents</h1>
-          <Link to="/property">
+          <Link to="/agentGrid">
             All Agents <span className="fa fa-angle-right"></span>
           </Link>
         </div>
