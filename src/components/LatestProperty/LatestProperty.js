@@ -14,6 +14,30 @@ const LatestProperty = (props) => {
           <Link to="/">{props.view}</Link>
           <i className="fa fa-angle-right"></i>
         </div>
+
+        <div className="property_img_card">
+          <ul>
+            <li>
+              <h4>Area</h4>
+              <span>
+                340m
+                <sup>2</sup>
+              </span>
+            </li>
+            <li>
+              <h4>Beds</h4>
+              <span>2</span>
+            </li>
+            <li>
+              <h4>Baths</h4>
+              <span>4</span>
+            </li>
+            <li>
+              <h4>Garages</h4>
+              <span>1</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
