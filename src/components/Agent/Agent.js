@@ -1,8 +1,14 @@
 import React from 'react'
 
-const Agent = () => {
+import './Agent.css'
+
+const Agent = (props) => {
   return (
-    <div>Agent</div>
+     <div className='agent'>
+        <div className='agent_img'>
+           <img src={props.img} />
+        </div>
+    </div>
   )
 }
 
