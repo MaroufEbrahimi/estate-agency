@@ -1,3 +1,8 @@
+.agent {
+  position: relative;
+  overflow: hidden;
+}
+
 .best_agents {
   margin-top: 90px;
 }
@@ -28,4 +33,86 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, auto));
   grid-gap: 2rem;
+}
+
+.agent_img img {
+  max-width: 100%;
+  object-fit: cover;
+  transition: all 0.7s ease-in-out;
+}
+
+.agent_layer_details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99.2%;
+  padding: 27px;
+  background: transparent;
+  transition: all 0.4s ease-in-out;
+}
+
+.agent:hover .agent_layer_details {
+  background: rgba(46, 202, 106, 0.8);
+}
+
+.layer_header_name {
+  position: absolute;
+  width: 100%;
+  top: -10%;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #000;
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+}
+
+.layer_header_name:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+.agent:hover .layer_header_name {
+  top: 7%;
+  opacity: 1;
+}
+
+.agent_layer_text {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  width: 100%;
+  padding: 27px;
+  font-weight: 500;
+  line-height: 1.3em;
+  letter-spacing: 0.02em;
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+}
+
+.agent:hover .agent_layer_text {
+  top: 25%;
+  opacity: 1;
+}
+
+.agent_layer_network {
+  position: absolute;
+  margin-top: 20px;
+  width: 100%;
+  opacity: 0;
+  color: #000;
+  transition: all 0.4s ease-in-out;
+  top: 40%;
+}
+
+.agent:hover .agent_layer_network {
+  opacity: 1;
+}
+
+.agent_layer_network p {
+  line-height: 2.2em;
+}
+
+.agent_layer_network p > span {
+  font-weight: 700;
 }
