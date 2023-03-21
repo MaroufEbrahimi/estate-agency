@@ -1,0 +1,42 @@
+.blog {
+  position: relative;
+  overflow: hidden;
+}
+
+.latest_news {
+  margin-top: 90px;
+}
+
+.blog_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog_title > h1 {
+  font-size: 2.5rem;
+}
+
+.blog_title > a {
+  color: #000;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+}
+
+.blog_title > a span {
+  color: #000;
+  font-size: 1.6rem;
+}
+
+.blog_boxes {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+  grid-gap: 2rem;
+}
+
+.blog img {
+  max-width: 100%;
+  object-fit: cover;
+  transition: all 0.7s ease-in-out;
+}
