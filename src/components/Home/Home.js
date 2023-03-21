@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import LatestProperty from "../LatestProperty/LatestProperty";
 import Agent from "../Agent/Agent";
+import Blog from "../Blog/Blog";
 
 import "./Home.css";
 
@@ -146,6 +147,27 @@ const Home = () => {
               phone="+93 123 1456 13"
               email="info@exp.com"
             />
+          </div>
+        </div>
+      </div>
+
+      {/* Blog */}
+      <div className="blog">
+        <div className="blog_title">
+          <h1>Latest News</h1>
+          <Link to="/blog">
+            All News <span className="fa fa-angle-right"></span>
+          </Link>
+        </div>
+        <div className="blog_boxes">
+          <div className="blog_box">
+            <Blog />
+          </div>
+          <div className="blog_box">
+            <Blog />
+          </div>
+          <div className="blog_box">
+            <Blog />
           </div>
         </div>
       </div>
