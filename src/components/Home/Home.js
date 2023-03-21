@@ -17,6 +17,11 @@ import agent1 from "../../assets/agents/agent-1.jpg";
 import agent2 from "../../assets/agents/agent-2.jpg";
 import agent3 from "../../assets/agents/agent-3.jpg";
 
+// Blog images
+import blog1 from "../../assets/blog/post-1.jpg";
+import blog2 from "../../assets/blog/post-2.jpg";
+import blog3 from "../../assets/blog/post-3.jpg";
+
 const Home = () => {
   return (
     <div className="home">
@@ -152,7 +157,7 @@ const Home = () => {
       </div>
 
       {/* Blog */}
-      <div className="blog">
+      <div className="latest_news">
         <div className="blog_title">
           <h1>Latest News</h1>
           <Link to="/blog">
@@ -161,13 +166,28 @@ const Home = () => {
         </div>
         <div className="blog_boxes">
           <div className="blog_box">
-            <Blog />
+            <Blog
+              img={blog1}
+              link="House"
+              text="House is comming new"
+              date="21 Mar. 2023"
+            />
           </div>
           <div className="blog_box">
-            <Blog />
+            <Blog
+              img={blog2}
+              link="Travel"
+              text="Travel is comming new"
+              date="22 Mar. 2023"
+            />
           </div>
           <div className="blog_box">
-            <Blog />
+            <Blog
+              img={blog3}
+              link="Park"
+              text="Park is comming new"
+              date="23 Mar. 2023"
+            />
           </div>
         </div>
       </div>
