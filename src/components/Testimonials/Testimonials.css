@@ -37,10 +37,14 @@
   font-size: 30px;
 }
 
-.testimonials_details_box > p {
+.testimonials_text {
   margin-top: 1.8rem;
+  position: relative;
+}
+
+.testimonials_text > p {
   padding: 30px 20px;
-  background: #f1f1f1;
+  background: #f3f3f3;
   font-size: 1rem;
   letter-spacing: 0.02em;
   font-style: italic;
@@ -48,8 +52,20 @@
   line-height: 23px;
 }
 
+.testimonials_text > p:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 100%;
+  left: 25px;
+  border-top: 15px solid #f3f3f3;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+}
+
 .testimonials_profile {
-  margin-top: 2.4rem;
+  margin-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
