@@ -22,3 +22,46 @@
 .testimonials_details_box > img {
   width: 100%;
 }
+
+.testimonials_details_box:last-child {
+  text-align: center;
+  margin-top: 14px;
+}
+
+.testimonials_details_box > span {
+  padding: 8px 18px;
+  text-align: center;
+  background: #2eca6a;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 30px;
+}
+
+.testimonials_details_box > p {
+  margin-top: 1.8rem;
+  padding: 30px 20px;
+  background: #f1f1f1;
+  font-size: 1rem;
+  letter-spacing: 0.02em;
+  font-style: italic;
+  text-align: start;
+  line-height: 23px;
+}
+
+.testimonials_profile {
+  margin-top: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.testimonials_profile > img {
+  border-radius: 50px;
+  max-width: 100%;
+}
+
+.testimonials_profile > p {
+  margin-left: 20px;
+  color: #000;
+  font-size: 18px;
+}
