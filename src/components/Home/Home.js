@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import LatestProperty from "../LatestProperty/LatestProperty";
 import Agent from "../Agent/Agent";
 import Blog from "../Blog/Blog";
+import Testimonials from "../Testimonials/Testimonials";
 
 import "./Home.css";
 
@@ -21,6 +22,10 @@ import agent3 from "../../assets/agents/agent-3.jpg";
 import blog1 from "../../assets/blog/post-1.jpg";
 import blog2 from "../../assets/blog/post-2.jpg";
 import blog3 from "../../assets/blog/post-3.jpg";
+
+// Testimonials
+import testimonial2 from "../../assets/testimonials/testimonial-2.jpg";
+import testimonialMini2 from "../../assets/testimonials/mini-testimonial-2.jpg";
 
 const Home = () => {
   return (
@@ -191,6 +196,29 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      {/* Testimonials */}
+      <div className="testimonials">
+        <div className="testimonials_title">
+          <h1>Testimonials</h1>
+          <div className="testimonials_angles">
+            <span className="fa fa-angle-left"></span>
+            <span className="fa fa-angle-right"></span>
+          </div>
+        </div>
+        <div className="testimonials_boxes">
+          <div className="testimonials_box">
+            <Testimonials
+              img={testimonial2}
+              text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique minus, magnam laboriosam praesentium cum est autem ducimus ullam dolore, corrupti eius!"
+              miniImg={testimonialMini2}
+              name="Pablo & Emma"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/*  */}
     </div>
   );
 };
