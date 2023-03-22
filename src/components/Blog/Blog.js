@@ -1,9 +1,22 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
-const Blog = () => {
+import "./Blog.css";
+
+const Blog = (props) => {
   return (
-    <div>Blog</div>
-  )
-}
+    <div className="blog">
+      <img src={props.img} />
 
-export default Blog
+      <div className="blog_detail">
+        <div className="blog_details">
+          <Link to="/">{props.link}</Link>
+          <h3>{props.text}</h3>
+          <p>{props.date}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Blog;
