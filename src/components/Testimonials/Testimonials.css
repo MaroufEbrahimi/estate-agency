@@ -1,0 +1,24 @@
+.testimonials {
+  margin-top: 3rem;
+}
+
+.testimonials_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testimonials_title > h1 {
+  font-size: 2.5rem;
+}
+
+.testimonials_details {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  grid-gap: 2rem;
+}
+
+.testimonials_details_box > img {
+  width: 100%;
+}
