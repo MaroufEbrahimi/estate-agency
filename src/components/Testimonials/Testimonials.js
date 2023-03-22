@@ -10,7 +10,9 @@ const Testimonials = (props) => {
       </div>
       <div className="testimonials_details_box">
         <span class="ion-ios-quote">1</span>
-        <p>{props.text}</p>
+        <div className="testimonials_text">
+          <p>{props.text}</p>
+        </div>
         <div className="testimonials_profile">
           <img src={props.miniImg} className="testimonials_name_img" />
           <p>{props.name}</p>
