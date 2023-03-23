@@ -33,6 +33,12 @@ const App = (props) => {
     setShowModal(false);
   };
 
+  const backToTopFun = () => {
+    window.addEventListener("click", () => {
+      window.scroll(0, 0);
+    });
+  };
+
   return (
     <div className="app">
       <Modal showBackdrop={showModal} removeModal={modalCloseHandler}>
@@ -50,9 +56,11 @@ const App = (props) => {
         </Layout>
         <Footer />
       </Router>
-      <div className="back_to_top">
-        <BackToTop backToTop={backToTop} setBackToTop={setBackToTop} />
-      </div>
+      <BackToTop
+        backToTop={backToTop}
+        setBackToTop={setBackToTop}
+        backToTopFun={backToTopFun}
+      />
     </div>
   );
 };
