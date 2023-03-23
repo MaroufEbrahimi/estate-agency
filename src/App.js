@@ -18,7 +18,11 @@ const App = (props) => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 90) {
         setBackToTop(true);
-      } else setBackToTop(false);
+        handleShow(true);
+      } else {
+        setBackToTop(false);
+        handleShow(false);
+      }
     });
     return () => {
       window.removeEventListener("scroll");
