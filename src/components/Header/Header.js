@@ -1,21 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 import "./Header.css";
 import SearchIcon from "@mui/icons-material/Search";
 
 const Header = (props) => {
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 90) {
-        props.handleShow(true);
-      } else props.handleShow(false);
-    });
-    return () => {
-      window.removeEventListener("scroll");
-    };
-  }, []);
-
   return (
     <div className={`header ${props.show && "header__height"}`}>
       <div className="header_logo">
