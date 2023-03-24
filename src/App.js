@@ -8,6 +8,7 @@ import Modal from "./components/Modal/Modal";
 import ModalContent from "./components/Modal/ModalContent/ModalContent";
 import Home from "./components/Home/Home";
 import BackToTop from "./components/BackToTop/BackToTop";
+import About from "./components/About/About";
 
 const App = (props) => {
   const [show, handleShow] = useState(false);
@@ -56,7 +57,8 @@ const App = (props) => {
         />
         <Layout>
           <div style={{ height: "200vh" }}></div>
-          <Home />
+          <Route path="/" component={Home} exact />
+          <Route path="/about" component={About} />
         </Layout>
         <Footer />
       </Router>
