@@ -1,0 +1,30 @@
+.about {
+  padding: 30px 9%;
+}
+
+.about_title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about_title > h1 {
+  padding: 20px;
+  font-size: 2.5rem;
+  border-left: 3px solid #2eca6a;
+  border-radius: 2px;
+  padding-left: 30px;
+  width: 70%;
+}
+
+.about_title > p {
+  margin-top: 40px;
+  font-size: 16px;
+  color: #555;
+  letter-spacing: 0.04em;
+  word-spacing: 0.02em;
+  font-weight: 100;
+}
+
+.meet_our_team {
+  margin-top: 6rem;
+}
