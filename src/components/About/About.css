@@ -28,3 +28,18 @@
 .meet_our_team {
   margin-top: 6rem;
 }
+
+/* media queries */
+@media (max-width: 941px) {
+  .about_title {
+    flex-direction: column;
+  }
+  .about_title > h1 {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .about_title > p {
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+}
