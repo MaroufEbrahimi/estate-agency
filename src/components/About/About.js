@@ -5,6 +5,8 @@ import Agent from "../Agent/Agent";
 
 import "./About.css";
 
+// images
+import slideAbout1 from "../../assets/about/slide-about-1.jpg";
 import agent7 from "../../assets/agents/agent-7.jpg";
 import agent6 from "../../assets/agents/agent-6.jpg";
 import agent5 from "../../assets/agents/agent-5.jpg";
@@ -21,6 +23,17 @@ const About = () => {
             </Link>
             / About
           </p>
+        </div>
+        <div className="section1_image">
+          <img src={slideAbout1} />
+          <div className="section1_text">
+            <h1>
+              EstateAgency
+              <br />
+              Sinse 2017
+            </h1>
+            <p>Art & Creative</p>
+          </div>
         </div>
       </div>
 
