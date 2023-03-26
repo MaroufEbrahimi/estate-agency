@@ -163,14 +163,14 @@ const Home = () => {
 
       {/* Blog */}
       <div className="latest_news">
-        <div className="blog_title">
+        <div className="blog_single_title">
           <h1>Latest News</h1>
           <Link to="/blog">
             All News <span className="fa fa-angle-right"></span>
           </Link>
         </div>
-        <div className="blog_boxes">
-          <div className="blog_box">
+        <div className="blog_single_boxes">
+          <div className="blog_single_box">
             <BlogSingle
               img={blog1}
               link="House"
@@ -178,7 +178,7 @@ const Home = () => {
               date="21 Mar. 2023"
             />
           </div>
-          <div className="blog_box">
+          <div className="blog_single_box">
             <BlogSingle
               img={blog2}
               link="Travel"
@@ -186,7 +186,7 @@ const Home = () => {
               date="22 Mar. 2023"
             />
           </div>
-          <div className="blog_box">
+          <div className="blog_single_box">
             <BlogSingle
               img={blog3}
               link="Park"
