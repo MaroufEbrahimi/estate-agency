@@ -32,6 +32,31 @@
   font-weight: 100;
 }
 
+.property_options {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.property_options select {
+  width: 13rem;
+  padding: 10px;
+  font-size: 16px;
+  color: #555;
+  border: 1px solid #313131;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.property_options select:focus {
+  box-shadow: 0.5px 0.5px 0.1px 3.5px rgba(72, 222, 248, 0.3);
+}
+
+.latest_property_boxes {
+  margin-top: 2rem;
+}
+
 /* media queries */
 @media (max-width: 941px) {
   .property_title {
