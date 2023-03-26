@@ -29,6 +29,15 @@ const Property = () => {
         </p>
       </div>
 
+      <div className="property_options">
+        <select id="type">
+          <option selected>All</option>
+          <option value="1">New to Old</option>
+          <option value="2">For Rent</option>
+          <option value="3">For Sale</option>
+        </select>
+      </div>
+
       <div className="latest_property_boxes">
         <div className="latest_property_box">
           <LatestProperty
