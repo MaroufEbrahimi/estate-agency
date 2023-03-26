@@ -7,6 +7,7 @@ import "./About.css";
 
 // images
 import slideAbout1 from "../../assets/about/slide-about-1.jpg";
+import about2 from "../../assets/about/about-2.jpg";
 import agent7 from "../../assets/agents/agent-7.jpg";
 import agent6 from "../../assets/agents/agent-6.jpg";
 import agent5 from "../../assets/agents/agent-5.jpg";
@@ -34,6 +35,33 @@ const About = () => {
             </h1>
             <p>Art & Creative</p>
           </div>
+        </div>
+      </div>
+
+      <div className="section_2">
+        <div className="section_2_box">
+          <img src={about2} />
+        </div>
+        <div className="section_2_box">
+          <h3>
+            Sed <span>porttitor</span> lectus
+            <br />
+            nibh
+          </h3>
+          <p>
+            Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus
+            magna justo, lacinia eget consectetur sed, convallis at tellus.
+            Praesent sapien massa, convallis a pellentesque nec, egestas non
+            nisi. Vestibulum ante ipsum primis in faucibus orci luctus et
+            ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet
+            aliquam vel, ullamcorper sit amet ligula.
+          </p>
+          <p>
+            Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget
+            consectetur sed, convallis at tellus. Mauris blandit aliquet elit,
+            eget tincidunt nibh pulvinar a. Vivamus magna justo, lacinia eget
+            consectetur sed, convallis at tellus.
+          </p>
         </div>
       </div>
 
