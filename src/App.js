@@ -56,7 +56,6 @@ const App = (props) => {
           headerSearch={showModalHandler}
         />
         <Layout>
-          <div style={{ height: "200vh" }}></div>
           <Route path="/" component={Home} exact />
           <Route path="/about" component={About} />
         </Layout>
