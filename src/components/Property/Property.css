@@ -1,0 +1,48 @@
+.property {
+  padding: 30px 9%;
+  margin-top: 10rem;
+}
+
+.property_title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.property_title > div {
+  border-left: 3px solid #2eca6a;
+  padding: 20px;
+  padding-left: 30px;
+}
+
+.property_title > div h1 {
+  font-size: 2.5rem;
+  border-radius: 2px;
+}
+
+.property_title > div p {
+  padding-top: 12px;
+}
+
+.property_title > p {
+  margin-top: 40px;
+  font-size: 16px;
+  color: #555;
+  letter-spacing: 0.04em;
+  word-spacing: 0.02em;
+  font-weight: 100;
+}
+
+/* media queries */
+@media (max-width: 941px) {
+  .property_title {
+    flex-direction: column;
+  }
+  .property_title > div h1 {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .property_title > p {
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+}
