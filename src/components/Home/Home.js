@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import LatestProperty from "../LatestProperty/LatestProperty";
 import Agent from "../Agent/Agent";
-import Blog from "../Blog/Blog";
+import BlogSingle from "../BlogSingle/BlogSingle";
 import Testimonials from "../Testimonials/Testimonials";
 
 import "./Home.css";
@@ -171,7 +171,7 @@ const Home = () => {
         </div>
         <div className="blog_boxes">
           <div className="blog_box">
-            <Blog
+            <BlogSingle
               img={blog1}
               link="House"
               text="House is comming new"
@@ -179,7 +179,7 @@ const Home = () => {
             />
           </div>
           <div className="blog_box">
-            <Blog
+            <BlogSingle
               img={blog2}
               link="Travel"
               text="Travel is comming new"
@@ -187,7 +187,7 @@ const Home = () => {
             />
           </div>
           <div className="blog_box">
-            <Blog
+            <BlogSingle
               img={blog3}
               link="Park"
               text="Park is comming new"
