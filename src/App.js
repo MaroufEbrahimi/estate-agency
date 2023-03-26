@@ -10,6 +10,7 @@ import Home from "./components/Home/Home";
 import BackToTop from "./components/BackToTop/BackToTop";
 import About from "./components/About/About";
 import Property from "./components/Property/Property";
+import Blog from "./components/Blog/Blog";
 
 const App = (props) => {
   const [show, handleShow] = useState(false);
@@ -60,6 +61,7 @@ const App = (props) => {
           <Route path="/" component={Home} exact />
           <Route path="/about" component={About} />
           <Route path="/property" component={Property} />
+          <Route path="/blog" component={Blog} />
         </Layout>
         <Footer />
       </Router>
