@@ -11,6 +11,7 @@ import BackToTop from "./components/BackToTop/BackToTop";
 import About from "./components/About/About";
 import Property from "./components/Property/Property";
 import Blog from "./components/Blog/Blog";
+import Contact from './components/Contact/Contact'
 
 const App = (props) => {
   const [show, handleShow] = useState(false);
@@ -62,6 +63,7 @@ const App = (props) => {
           <Route path="/about" component={About} />
           <Route path="/property" component={Property} />
           <Route path="/blog" component={Blog} />
+          <Route path="/contact" component={Contact} />
         </Layout>
         <Footer />
       </Router>
