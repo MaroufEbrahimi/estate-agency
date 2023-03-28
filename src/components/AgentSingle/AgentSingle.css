@@ -2,3 +2,47 @@
   padding: 30px 9%;
   margin-top: 10rem;
 }
+
+.agent_single_title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.agent_single_title > div {
+  border-left: 3px solid #2eca6a;
+  padding: 20px;
+  padding-left: 30px;
+}
+
+.agent_single_title > div h1 {
+  font-size: 2.5rem;
+  border-radius: 2px;
+}
+
+.agent_single_title > div p {
+  padding-top: 12px;
+}
+
+.agent_single_title > p {
+  margin-top: 40px;
+  font-size: 16px;
+  color: #555;
+  letter-spacing: 0.04em;
+  word-spacing: 0.02em;
+  font-weight: 100;
+}
+
+/* media queries */
+@media (max-width: 941px) {
+  .agent_single_title {
+    flex-direction: column;
+  }
+  .agent_single_title > div h1 {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .agent_single_title > p {
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+}
