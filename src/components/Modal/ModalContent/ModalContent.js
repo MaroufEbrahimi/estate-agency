@@ -83,7 +83,9 @@ const ModalContent = (props) => {
           </div>
 
           <div className="search_box">
-            <button type="submit">Search Property</button>
+            <button className="btn" type="submit">
+              Search Property
+            </button>
           </div>
         </form>
       </div>
