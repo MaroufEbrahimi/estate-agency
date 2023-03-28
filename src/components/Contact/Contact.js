@@ -52,7 +52,62 @@ const Contact = () => {
           </form>
         </div>
 
-        <div className="contact_section2_box"></div>
+        <div className="contact_section2_box">
+          <div className="contact_info_row">
+            <div className="con_info_header">
+              <span className="ion-ios-paper-plane">1</span>
+            </div>
+            <div>
+              <h3>Say Hello</h3>
+              <p>
+                Email. <span>famous@gmail.com</span>
+              </p>
+              <p>
+                Phone. <span>+93 111 222333</span>
+              </p>
+            </div>
+          </div>
+
+          <div className="contact_info_row">
+            <div className="con_info_header">
+              <span className="ion-ios-pin">1</span>
+            </div>
+            <div>
+              <h3>Find us in</h3>
+              <p>
+                Herat, Afghanistan 00011,
+                <br />
+                FM. AM.
+              </p>
+            </div>
+          </div>
+
+          <div className="contact_info_row">
+            <div className="con_info_header">
+              <span className="ion-ios-redo">1</span>
+            </div>
+            <div>
+              <h3>Social networks</h3>
+              <div className="social_links_contact">
+                <Link to="/">
+                  <i className="fa fa-twitter"></i>
+                </Link>
+                <Link to="/">
+                  <i className="fa fa-instagram"></i>
+                </Link>
+                <Link to="/">
+                  <i className="fa fa-linkedin"></i>
+                </Link>
+                <Link to="/">
+                  <i className="fa fa-github"></i>
+                </Link>
+                <Link to="/">
+                  <i className="fa fa-pinterest"></i>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
