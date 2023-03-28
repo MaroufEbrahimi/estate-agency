@@ -11,7 +11,8 @@ import BackToTop from "./components/BackToTop/BackToTop";
 import About from "./components/About/About";
 import Property from "./components/Property/Property";
 import Blog from "./components/Blog/Blog";
-import Contact from './components/Contact/Contact'
+import Contact from "./components/Contact/Contact";
+import AgentSingle from "./components/AgentSingle/AgentSingle";
 
 const App = (props) => {
   const [show, handleShow] = useState(false);
@@ -64,6 +65,7 @@ const App = (props) => {
           <Route path="/property" component={Property} />
           <Route path="/blog" component={Blog} />
           <Route path="/contact" component={Contact} />
+          <Route path="/agent-single" component={AgentSingle} />
         </Layout>
         <Footer />
       </Router>
