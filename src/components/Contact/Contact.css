@@ -34,6 +34,36 @@
   font-weight: 100;
 }
 
+.contact_section2 {
+  margin-top: 6rem;
+}
+
+.contact_section2_boxes > form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.contact_section2_boxes > form .full_box {
+  grid-column: 1/3;
+}
+
+.contact_section2_boxes input,
+.contact_section2_boxes textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  border: 1px solid #e0dcdc;
+  outline: none;
+  transition: border 0.3s ease;
+  resize: vertical;
+}
+
+.contact_section2_boxes input:focus,
+.contact_section2_boxes textarea:focus {
+  border-color: #2eca6a;
+}
+
 /* media queries */
 @media (max-width: 941px) {
   .contact_title {
