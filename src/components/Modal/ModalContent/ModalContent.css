@@ -79,24 +79,6 @@
   font-size: 18px;
 }
 
-.search_box button {
-  background: #2eca6a;
-  border: none;
-  outline: none;
-  width: 220px;
-  height: 60px;
-  color: #000;
-  font-size: 16px;
-  letter-spacing: 0.05em;
-  transition: all 0.4s ease-in-out;
-  cursor: pointer;
-}
-
-.search_box button:hover {
-  background: #000;
-  color: #fff;
-}
-
 /* media queries */
 @media (max-width: 1115px) {
   .search_box {
