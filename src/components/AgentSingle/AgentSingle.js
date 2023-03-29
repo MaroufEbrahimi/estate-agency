@@ -82,6 +82,21 @@ const AgentSingle = () => {
           </div>
         </div>
       </div>
+
+      <div className="agent_single_section2">
+        <div className="agent_single_section2_title">
+          <h1>My Properties (6)</h1>
+        </div>
+
+        <div className="agent_single_options">
+          <select id="type">
+            <option selected>All</option>
+            <option value="1">New to Old</option>
+            <option value="2">For Rent</option>
+            <option value="3">For Sale</option>
+          </select>
+        </div>
+      </div>
     </div>
   );
 };
