@@ -13,6 +13,7 @@ import Property from "./components/Property/Property";
 import Blog from "./components/Blog/Blog";
 import Contact from "./components/Contact/Contact";
 import AgentSingle from "./components/AgentSingle/AgentSingle";
+import AgentsGrid from "./components/AgentsGrid/AgentsGrid";
 
 const App = (props) => {
   const [show, handleShow] = useState(false);
@@ -66,6 +67,7 @@ const App = (props) => {
           <Route path="/blog" component={Blog} />
           <Route path="/contact" component={Contact} />
           <Route path="/agent-single" component={AgentSingle} />
+          <Route path="/agent-grid" component={AgentsGrid} />
         </Layout>
         <Footer />
       </Router>
