@@ -31,3 +31,18 @@
   word-spacing: 0.02em;
   font-weight: 100;
 }
+
+/* media queries */
+@media (max-width: 941px) {
+  .agent_grid_title {
+    flex-direction: column;
+  }
+  .agent_grid_title > div h1 {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .agent_grid_title > p {
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+}
