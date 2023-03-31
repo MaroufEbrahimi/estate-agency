@@ -41,6 +41,43 @@ const PropertySingle = () => {
                 quam vehicula elementum sed sit amet dui. Quisque velit nisi,
                 pretium ut lacinia in, elementum id enim.
               </p>
+
+              <ul>
+                <li>
+                  <strong>Phone: </strong>
+                  <span>(111) 23456789</span>
+                </li>
+                <li>
+                  <strong>Mobile</strong>
+                  <span>999 666 333 567</span>
+                </li>
+                <li>
+                  <strong>Email</strong>
+                  <span>famous@gmail.com</span>
+                </li>
+                <li>
+                  <strong>Skype</strong>
+                  <span>Famous FM</span>
+                </li>
+              </ul>
+
+              <div className="property_social_links">
+                <Link to="/">
+                  <i className="fa fa-twitter">1</i>
+                </Link>
+                <Link to="/">
+                  <i className="fa fa-instagram">1</i>
+                </Link>
+                <Link to="/">
+                  <i className="fa fa-linkedin">1</i>
+                </Link>
+                <Link to="/">
+                  <i className="fa fa-github">1</i>
+                </Link>
+                <Link to="/">
+                  <i className="fa fa-pinterest">1</i>
+                </Link>
+              </div>
             </div>
           </div>
 
