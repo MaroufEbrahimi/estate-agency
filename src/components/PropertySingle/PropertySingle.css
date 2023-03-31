@@ -84,6 +84,33 @@
   line-height: 1.5em;
 }
 
+.section5_box ul {
+  margin-top: 1.6rem;
+}
+
+.section5_box ul li {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+}
+
+.section5_box li strong {
+  color: #000;
+}
+
+.property_social_links {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.property_social_links a {
+  padding: 15px;
+}
+
+.property_social_links a i {
+  font-style: normal;
+}
+
 .property_single_section5_box input,
 .property_single_section5_box textarea {
   width: 100%;
