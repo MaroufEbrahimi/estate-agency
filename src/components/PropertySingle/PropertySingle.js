@@ -3,10 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./PropertySingle.css";
 
-// images
-import agent4 from "../../assets/agents/agent-4.jpg";
-
-const PropertySingle = () => {
+const PropertySingle = (props, { images = [] }) => {
   return (
     <div className="property_single">
       <div className="property_single_title">
@@ -26,12 +23,25 @@ const PropertySingle = () => {
         </p>
       </div>
 
+      <div className="property_single_section1">
+        <div className="contact_image_slider" {...props}>
+          {images.map((item, index) => (
+            <div
+              key={index}
+              style={{
+                backgroundImage: `url(${item})`,
+              }}
+            ></div>
+          ))}
+        </div>
+      </div>
+
       <div className="property_single_section5">
         <h1>Contact Agent</h1>
         <div className="property_single_section5_boxes">
           <div className="property_single_section5_box property_single_section5_box1">
             <div className="section5_box">
-              <img src={agent4} />
+              <img src={props.agent4} />
             </div>
 
             <div className="section5_box">
