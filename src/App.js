@@ -14,7 +14,14 @@ import Blog from "./components/Blog/Blog";
 import Contact from "./components/Contact/Contact";
 import AgentSingle from "./components/AgentSingle/AgentSingle";
 import AgentsGrid from "./components/AgentsGrid/AgentsGrid";
-import PropertySingle from "./components/PropertySingle/PropertySingle"
+import PropertySingle from "./components/PropertySingle/PropertySingle";
+
+// ###----- images -----###
+// Property images
+import propertySlide1 from "./assets/agents/slider/slide-1.jpg";
+import propertySlide2 from "./assets/agents/slider/slide-2.jpg";
+import propertySlide3 from "./assets/agents/slider/slide-3.jpg";
+import agent4 from "./assets/agents/agent-4.jpg";
 
 const App = (props) => {
   const [show, handleShow] = useState(false);
@@ -69,7 +76,12 @@ const App = (props) => {
           <Route path="/contact" component={Contact} />
           <Route path="/agent-single" component={AgentSingle} />
           <Route path="/agent-grid" component={AgentsGrid} />
-          <Route path="/property-single" component={PropertySingle} />
+          <Route path="/property-single">
+            <PropertySingle
+              agent4={agent4}
+              images={[propertySlide1, propertySlide2, propertySlide3]}
+            />
+          </Route>
         </Layout>
         <Footer />
       </Router>
