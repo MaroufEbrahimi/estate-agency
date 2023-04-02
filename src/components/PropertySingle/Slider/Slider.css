@@ -1,0 +1,33 @@
+.image_slider {
+  height: 80vh;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+}
+
+.slide {
+  flex-shrink: 0;
+  background-position: center;
+  background-size: cover;
+  transition: all 1s ease-in-out;
+}
+
+.indicatorWrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  background: transparent;
+  border: 0.15rem solid #ee82ee;
+  margin: 2px;
+  border-radius: 10px;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
