@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import "./PropertySingle.css";
 
-const PropertySingle = (props, { images = [] }) => {
+import propertySlide1 from "../../assets/agents/slider/slide-1.jpg";
+import propertySlide2 from "../../assets/agents/slider/slide-2.jpg";
+import propertySlide3 from "../../assets/agents/slider/slide-3.jpg";
+
+import Slider from "./Slider/Slider";
+
+const PropertySingle = (props) => {
   return (
     <div className="property_single">
       <div className="property_single_title">
@@ -24,16 +30,7 @@ const PropertySingle = (props, { images = [] }) => {
       </div>
 
       <div className="property_single_section1">
-        <div className="contact_image_slider" {...props}>
-          {images.map((item, index) => (
-            <div
-              key={index}
-              style={{
-                backgroundImage: `url(${item})`,
-              }}
-            ></div>
-          ))}
-        </div>
+        <Slider images={[propertySlide1, propertySlide2, propertySlide3]} />
       </div>
 
       <div className="property_single_section5">
