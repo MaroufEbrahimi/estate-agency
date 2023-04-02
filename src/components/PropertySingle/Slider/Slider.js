@@ -37,7 +37,7 @@ const Slider = ({ images = [], ...props }) => {
           key={index}
           style={{
             backgroundImage: `url(${item})`,
-            marginLeft: index === 0 ? `-${currentSlide * 124}%` : null,
+            marginLeft: index === 0 ? `-${currentSlide * 126}%` : null,
           }}
         ></div>
       ))}
