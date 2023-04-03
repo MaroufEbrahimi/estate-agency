@@ -1,11 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import "./PropertySingle.css";
-
-import propertySlide1 from "../../assets/agents/slider/slide-1.jpg";
-import propertySlide2 from "../../assets/agents/slider/slide-2.jpg";
-import propertySlide3 from "../../assets/agents/slider/slide-3.jpg";
 
 import Slider from "./Slider/Slider";
 
@@ -30,7 +26,15 @@ const PropertySingle = (props) => {
       </div>
 
       <div className="property_single_section1">
-        <Slider images={[propertySlide1, propertySlide2, propertySlide3]} />
+        <Slider
+          currentSlide={props.currentSlide}
+          setCurrentSlide={props.setCurrentSlide}
+          images={[
+            props.propertySlide1,
+            props.propertySlide2,
+            props.propertySlide3,
+          ]}
+        />
       </div>
 
       <div className="property_single_section5">
