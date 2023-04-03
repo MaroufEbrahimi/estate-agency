@@ -4,16 +4,15 @@ import { Link } from "react-router-dom";
 import "./AgentSingle.css";
 import LatestProperty from "../LatestProperty/LatestProperty";
 
-// images
-import agent7 from "../../assets/agents/agent-7.jpg";
-import property_4 from "../../assets/latest-property/property-4.jpg";
-import property_5 from "../../assets/latest-property/property-5.jpg";
-import property_6 from "../../assets/latest-property/property-6.jpg";
-import property_7 from "../../assets/latest-property/property-7.jpg";
-import property_8 from "../../assets/latest-property/property-8.jpg";
-import property_9 from "../../assets/latest-property/property-9.jpg";
-
-const AgentSingle = () => {
+const AgentSingle = ({
+  agent7,
+  property_4,
+  property_5,
+  property_6,
+  property_7,
+  property_8,
+  property_9,
+}) => {
   return (
     <div className="agent_single">
       <div className="agent_single_title">
