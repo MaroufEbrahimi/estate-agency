@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import "./Slider.css";
 
@@ -12,7 +12,7 @@ const Indicator = ({ currenSlide, amountSlides, nextSlide }) => {
             className="dot"
             key={i}
             style={{
-              background: currenSlide === i ? `#ee82ee` : `transparent`,
+              background: currenSlide === i ? `#4c8d60` : `transparent`,
             }}
             onClick={() => nextSlide(i)}
           ></div>
@@ -22,11 +22,9 @@ const Indicator = ({ currenSlide, amountSlides, nextSlide }) => {
 };
 
 const Slider = ({ images = [], ...props }) => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const nextSlide = (slideIndex = currentSlide + 1) => {
+  const nextSlide = (slideIndex = props.currentSlide + 1) => {
     const currentSlideIndex = slideIndex >= images.length ? 0 : slideIndex;
-    setCurrentSlide(currentSlideIndex);
+    props.setCurrentSlide(currentSlideIndex);
   };
 
   return (
@@ -37,12 +35,12 @@ const Slider = ({ images = [], ...props }) => {
           key={index}
           style={{
             backgroundImage: `url(${item})`,
-            marginLeft: index === 0 ? `-${currentSlide * 126}%` : null,
+            marginLeft: index === 0 ? `-${props.currentSlide * 126}%` : null,
           }}
         ></div>
       ))}
       <Indicator
-        currenSlide={currentSlide}
+        currenSlide={props.currentSlide}
         amountSlides={images.length}
         nextSlide={nextSlide}
       />
