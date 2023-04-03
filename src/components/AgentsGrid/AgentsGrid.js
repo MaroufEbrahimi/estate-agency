@@ -5,16 +5,7 @@ import Agent from "../Agent/Agent";
 
 import "./AgentsGrid.css";
 
-// images
-import agent1 from "../../assets/agents/agent-1.jpg";
-import agent2 from "../../assets/agents/agent-2.jpg";
-import agent3 from "../../assets/agents/agent-3.jpg";
-import agent4 from "../../assets/agents/agent-4.jpg";
-import agent5 from "../../assets/agents/agent-5.jpg";
-import agent6 from "../../assets/agents/agent-6.jpg";
-import agent7 from "../../assets/agents/agent-7.jpg";
-
-const AgentsGrid = () => {
+const AgentsGrid = ({ agent1, agent2, agent3, agent4, agent5, agent6 }) => {
   return (
     <div className="agent_grid">
       <div className="agent_grid_title">
