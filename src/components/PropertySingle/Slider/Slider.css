@@ -1,4 +1,6 @@
 .image_slider {
+  position: relative;
+  overflow: hidden;
   height: 80vh;
   display: flex;
   flex-wrap: nowrap;
@@ -9,25 +11,32 @@
   flex-shrink: 0;
   background-position: center;
   background-size: cover;
-  transition: all 1s ease-in-out;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
 }
 
 .indicatorWrapper {
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: nowrap;
   position: absolute;
-  bottom: 15px;
-  left: 50%;
-  transform: translate(-50%);
+  top: 0%;
+  right: 0%;
+  width: 6%;
+  height: 8%;
+  background: #2eca6a;
 }
 
 .dot {
-  width: 9px;
-  height: 9px;
+  width: 13px;
+  height: 13px;
   background: transparent;
-  border: 0.15rem solid #ee82ee;
+  border: 0.12rem solid #fff;
   margin: 2px;
   border-radius: 10px;
   opacity: 1;
   transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  color: #4c8d60;
 }
