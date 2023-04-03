@@ -8,26 +8,19 @@ import Testimonials from "../Testimonials/Testimonials";
 
 import "./Home.css";
 
-// Latest property images
-import property_1 from "../../assets/latest-property/property-1.jpg";
-import property_2 from "../../assets/latest-property/property-2.jpg";
-import property_3 from "../../assets/latest-property/property-3.jpg";
-
-// Agents images
-import agent1 from "../../assets/agents/agent-1.jpg";
-import agent2 from "../../assets/agents/agent-2.jpg";
-import agent3 from "../../assets/agents/agent-3.jpg";
-
-// Blog images
-import blog1 from "../../assets/blog/post-1.jpg";
-import blog2 from "../../assets/blog/post-2.jpg";
-import blog3 from "../../assets/blog/post-3.jpg";
-
-// Testimonials
-import testimonial2 from "../../assets/testimonials/testimonial-2.jpg";
-import testimonialMini2 from "../../assets/testimonials/mini-testimonial-2.jpg";
-
-const Home = () => {
+const Home = ({
+  property_1,
+  property_2,
+  property_3,
+  agent1,
+  agent2,
+  agent3,
+  blog1,
+  blog2,
+  blog3,
+  testimonial2,
+  testimonialMini2,
+}) => {
   return (
     <div className="home">
       <div className="our_services">
