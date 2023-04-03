@@ -5,14 +5,7 @@ import Agent from "../Agent/Agent";
 
 import "./About.css";
 
-// images
-import slideAbout1 from "../../assets/about/slide-about-1.jpg";
-import about2 from "../../assets/about/about-2.jpg";
-import agent7 from "../../assets/agents/agent-7.jpg";
-import agent6 from "../../assets/agents/agent-6.jpg";
-import agent5 from "../../assets/agents/agent-5.jpg";
-
-const About = () => {
+const About = ({ slideAbout1, about2, agent7, agent6, agent5 }) => {
   return (
     <div className="about">
       <div className="section_1">
