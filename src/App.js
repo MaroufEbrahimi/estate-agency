@@ -19,11 +19,15 @@ import PropertySingle from "./components/PropertySingle/PropertySingle";
 // ###----- images -----###
 // Property images
 import agent4 from "./assets/agents/agent-4.jpg";
+import propertySlide1 from "./assets/agents/slider/slide-1.jpg";
+import propertySlide2 from "./assets/agents/slider/slide-2.jpg";
+import propertySlide3 from "./assets/agents/slider/slide-3.jpg";
 
 const App = (props) => {
   const [show, handleShow] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [backToTop, setBackToTop] = useState(false);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -74,7 +78,14 @@ const App = (props) => {
           <Route path="/agent-single" component={AgentSingle} />
           <Route path="/agent-grid" component={AgentsGrid} />
           <Route path="/property-single">
-            <PropertySingle agent4={agent4} />
+            <PropertySingle
+              currentSlide={currentSlide}
+              setCurrentSlide={setCurrentSlide}
+              agent4={agent4}
+              propertySlide1={propertySlide1}
+              propertySlide2={propertySlide2}
+              propertySlide3={propertySlide3}
+            />
           </Route>
         </Layout>
         <Footer />
