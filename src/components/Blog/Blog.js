@@ -4,15 +4,7 @@ import { Link } from "react-router-dom";
 import "./Blog.css";
 import BlogSingle from "../BlogSingle/BlogSingle";
 
-// Blog images
-import blog2 from "../../assets/blog/post-2.jpg";
-import blog3 from "../../assets/blog/post-3.jpg";
-import blog4 from "../../assets/blog/post-4.jpg";
-import blog5 from "../../assets/blog/post-5.jpg";
-import blog6 from "../../assets/blog/post-6.jpg";
-import blog7 from "../../assets/blog/post-7.jpg";
-
-const Blog = () => {
+const Blog = ({ blog2, blog3, blog4, blog5, blog6, blog7 }) => {
   return (
     <div className="blog">
       <div className="blog_title">
