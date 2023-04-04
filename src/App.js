@@ -15,6 +15,7 @@ import Contact from "./components/Contact/Contact";
 import AgentSingle from "./components/AgentSingle/AgentSingle";
 import AgentsGrid from "./components/AgentsGrid/AgentsGrid";
 import PropertySingle from "./components/PropertySingle/PropertySingle";
+import BlogDetails from "./components/BlogDetails/BlogDetails";
 
 // ###----- images -----###
 // agents
@@ -177,6 +178,9 @@ const App = (props) => {
               propertySlide2={propertySlide2}
               propertySlide3={propertySlide3}
             />
+          </Route>
+          <Route path="/blog-details">
+            <BlogDetails propertySlide3={propertySlide3} />
           </Route>
         </Layout>
         <Footer />
