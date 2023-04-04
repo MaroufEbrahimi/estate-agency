@@ -63,13 +63,14 @@
 .property_single_section2_boxes {
   display: grid;
   grid-template-columns: 1.2fr 2fr;
-  grid-gap: 2rem;
+  grid-gap: 8rem;
 }
 
 .property_single_section2_boxes h3 {
   margin-bottom: 3.5rem;
   position: relative;
   font-size: 2rem;
+  color: #000;
 }
 
 .property_single_section2_boxes h3::after {
@@ -103,6 +104,55 @@
   font-size: 2.5rem;
   font-weight: 600;
   margin-left: -40px;
+}
+
+.property_summery {
+  margin-top: 3rem;
+}
+
+.property_summery ul li {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2rem;
+}
+
+.property_summery ul li strong {
+  color: #000;
+}
+
+.property_description p {
+  font-size: 16px;
+  line-height: 1.6em;
+  padding: 10px 0;
+}
+
+.propery_amenity {
+  margin-top: 2.5rem;
+}
+
+.propery_amenity ul {
+  display: inline-block;
+  line-height: 2;
+  padding: 0;
+  list-style: none;
+}
+
+.propery_amenity ul li {
+  position: relative;
+  width: 33%;
+  float: left;
+  padding-left: 25px;
+  padding-right: 5px;
+}
+
+.propery_amenity ul li::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  top: 15px;
+  left: 0;
+  background: #313131;
 }
 
 .property_single_section5 {
@@ -231,5 +281,9 @@
 @media (max-width: 768px) {
   .property_single_section5_box1 {
     grid-template-columns: 1fr;
+  }
+  .property_single_section2_boxes {
+    grid-template-columns: 1fr;
+    grid-gap: 8rem;
   }
 }
