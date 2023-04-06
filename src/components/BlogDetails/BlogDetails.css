@@ -129,4 +129,13 @@
     margin-top: 40px;
     margin-left: 20px;
   }
+  .blog_details_section2 {
+    padding: 0 8%;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog_details_section2 {
+    padding: 0;
+  }
 }
