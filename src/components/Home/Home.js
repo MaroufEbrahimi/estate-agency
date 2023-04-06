@@ -18,9 +18,26 @@ const Home = ({
   blog1,
   blog2,
   blog3,
+  testimonial1,
   testimonial2,
+  testimonialMini1,
   testimonialMini2,
 }) => {
+  const testimonialsObj = [
+    {
+      img: testimonial1,
+      text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique minus, magnam laboriosam praesentium cum est autem ducimus ullam dolore, corrupti eius!",
+      miniImg: testimonialMini1,
+      name: "Albert & Erika",
+    },
+    {
+      img: testimonial2,
+      text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique minus, magnam laboriosam praesentium cum est autem ducimus ullam dolore, corrupti eius!",
+      miniImg: testimonialMini2,
+      name: "Pablo & Emma",
+    },
+  ];
+
   return (
     <div className="home">
       <div className="our_services">
@@ -78,7 +95,6 @@ const Home = ({
           </div>
         </div>
       </div>
-
       {/* Latest Property */}
       <div className="latest_property">
         <div className="latest_property_title">
@@ -114,7 +130,6 @@ const Home = ({
           </div>
         </div>
       </div>
-
       {/* Best Agents */}
       <div className="best_agents">
         <div className="best_agents_title">
@@ -127,7 +142,7 @@ const Home = ({
           <div className="best_agents_box">
             <Agent
               img={agent1}
-              name="Ahmad Ali Ahmadi"
+              name="Marouf Famous Ebrahimi"
               text="Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two."
               phone="+93 123 1456 11"
               email="info@exp.com"
@@ -136,7 +151,7 @@ const Home = ({
           <div className="best_agents_box">
             <Agent
               img={agent2}
-              name="Moahmmad Nabi Moahmmadi"
+              name="Marouf Famous Ebrahimi"
               text="Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum porta two."
               phone="+93 123 1456 12"
               email="info@exp.com"
@@ -153,7 +168,6 @@ const Home = ({
           </div>
         </div>
       </div>
-
       {/* Blog */}
       <div className="latest_news">
         <div className="blog_single_title">
@@ -189,28 +203,21 @@ const Home = ({
           </div>
         </div>
       </div>
-
       {/* Testimonials */}
       <div className="testimonials">
         <div className="testimonials_title">
           <h1>Testimonials</h1>
           <div className="testimonials_angles">
-            <span className="fa fa-angle-left"></span>
-            <span className="fa fa-angle-right"></span>
+            <i className="fa fa-angle-left">&lang;</i>
+            <i className="fa fa-angle-right">&rang;</i>
           </div>
         </div>
         <div className="testimonials_boxes">
           <div className="testimonials_box">
-            <Testimonials
-              img={testimonial2}
-              text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique minus, magnam laboriosam praesentium cum est autem ducimus ullam dolore, corrupti eius!"
-              miniImg={testimonialMini2}
-              name="Pablo & Emma"
-            />
+            <Testimonials testimonialsObj={testimonialsObj} />
           </div>
         </div>
       </div>
-
       {/*  */}
     </div>
   );
