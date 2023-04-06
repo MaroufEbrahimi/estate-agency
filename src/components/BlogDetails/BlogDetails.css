@@ -171,7 +171,7 @@
   font-size: 18px;
   border: 1px solid #ccc;
   outline: none;
-  transition: border 0.3s ease-in-out;
+  transition: border 0.3s ease;
 }
 
 .blog_details_section3_box textarea {
