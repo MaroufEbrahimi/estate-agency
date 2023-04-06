@@ -53,7 +53,9 @@ import blog6 from "./assets/blog/post-6.jpg";
 import blog7 from "./assets/blog/post-7.jpg";
 
 // Testimonials
+import testimonial1 from "./assets/testimonials/testimonial-1.jpg";
 import testimonial2 from "./assets/testimonials/testimonial-2.jpg";
+import testimonialMini1 from "./assets/testimonials/mini-testimonial-1.jpg";
 import testimonialMini2 from "./assets/testimonials/mini-testimonial-2.jpg";
 
 const App = (props) => {
@@ -115,6 +117,8 @@ const App = (props) => {
               blog2={blog2}
               blog3={blog3}
               testimonial2={testimonial2}
+              testimonial1={testimonial1}
+              testimonialMini1={testimonialMini1}
               testimonialMini2={testimonialMini2}
             />
           </Route>
