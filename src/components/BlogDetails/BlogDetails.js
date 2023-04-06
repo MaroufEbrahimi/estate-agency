@@ -57,7 +57,7 @@ const BlogDetails = ({ propertySlide3 }) => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
             posuere erat a ante.
           </h4>
-          <p>Albert Vargas Author</p>
+          <p>Marouf Famous Author</p>
         </div>
         <div className="blog_details_section2_4">
           <p>
@@ -67,6 +67,54 @@ const BlogDetails = ({ propertySlide3 }) => {
             enim.
           </p>
         </div>
+        <div className="blog_details_social_links">
+          <span>Share: </span>
+          <Link to="/">
+            <i className="fa fa-twitter">&hearts;</i>
+          </Link>
+          <Link to="/">
+            <i className="fa fa-instagram">&hearts;</i>
+          </Link>
+          <Link to="/">
+            <i className="fa fa-linkedin">&hearts;</i>
+          </Link>
+          <Link to="/">
+            <i className="fa fa-pinterest">&hearts;</i>
+          </Link>
+        </div>
+      </div>
+
+      <div className="blog_details_section3">
+        <div className="blog_details_section3_title">
+          <h1>Leave a Reply</h1>
+        </div>
+        <form>
+          <div className="blog_details_section3_box">
+            <label>Enter name</label>
+            <input type="text" placeholder="Name *" required />
+          </div>
+
+          <div className="blog_details_section3_box">
+            <label>Enter email</label>
+            <input type="email" placeholder="Email *" required />
+          </div>
+
+          <div className="blog_details_section3_box full_box">
+            <label>Enter website</label>
+            <input type="text" placeholder="Website" />
+          </div>
+
+          <div className="blog_details_section3_box full_box">
+            <label>Enter message</label>
+            <textarea
+              cols="30"
+              rows="9"
+              placeholder="Comment *"
+              required
+            ></textarea>
+          </div>
+          <div className="blog_details_section3_box"></div>
+        </form>
       </div>
     </div>
   );
