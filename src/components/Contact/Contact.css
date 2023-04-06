@@ -137,16 +137,16 @@
     margin-top: 40px;
     margin-left: 20px;
   }
-  .contact_section2_boxes > form .contact_search_box {
-    width: auto;
-  }
 }
 
 @media (max-width: 768px) {
   .contact_section2 {
     grid-template-columns: 1fr;
   }
-  .contact_section2_boxes > form .contact_search_box {
-    grid-column: 1/3;
+  .contact_section2_boxes > form {
+    grid-template-columns: 1fr;
+  }
+  .contact_section2_boxes > form .full_box {
+    grid-column: 1;
   }
 }
