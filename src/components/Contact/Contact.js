@@ -52,13 +52,10 @@ const Contact = () => {
             <div className="contact_search_box full_box">
               <textarea cols="30" rows="8" placeholder="Message"></textarea>
             </div>
-
-            <div className="contact_search_box">
-              <button className="btn" type="submit">
-                Send Message
-              </button>
-            </div>
           </form>
+            <button className="btn" type="submit">
+              Send Message
+            </button>
         </div>
 
         <div className="contact_section2_box">
