@@ -9,14 +9,15 @@
 }
 
 .footer_private_links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  text-align: center;
   margin-bottom: 20px;
 }
 
 .footer_private_links a {
   margin: 8px;
+  display: inline-block;
+  line-height: 0.8em;
   text-transform: capitalize;
 }
 
@@ -36,4 +37,13 @@
 
 .footer_copyright p:last-child {
   font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 4% 20px 4%;
+  }
+  .footer_private_links a {
+    margin: 6px;
+  }
 }
