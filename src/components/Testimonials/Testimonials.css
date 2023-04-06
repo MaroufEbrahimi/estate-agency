@@ -1,5 +1,5 @@
 .testimonials {
-  margin-top: 3rem;
+  margin-top: 7rem;
 }
 
 .testimonials_title {
@@ -12,8 +12,17 @@
   font-size: 2.5rem;
 }
 
+.testimonials_angles i {
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  margin: 0 0 0 10px;
+  color: #535353;
+  cursor: pointer;
+}
+
 .testimonials_details {
-  margin-top: 3rem;
+  margin-top: 4rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   grid-gap: 2rem;
