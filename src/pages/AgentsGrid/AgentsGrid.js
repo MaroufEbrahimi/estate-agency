@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Agent from "../Agent/Agent";
+import Agent from "../../components/Agent/Agent";
 
 import "./AgentsGrid.css";
 

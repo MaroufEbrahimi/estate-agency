@@ -69,18 +69,18 @@ const BlogDetails = ({ propertySlide3 }) => {
         </div>
         <div className="blog_details_social_links">
           <span>Share: </span>
-          <Link to="/">
+          <a href="https://twitter.com/01Marouf" target="_blank">
             <i className="fa fa-twitter">&hearts;</i>
-          </Link>
-          <Link to="/">
+          </a>
+          <a href="https://www.instagram.com/marouffmfm/" target="_blank">
             <i className="fa fa-instagram">&hearts;</i>
-          </Link>
-          <Link to="/">
+          </a>
+          <a href="https://www.linkedin.com/in/marouf-ebrahimi-7b6312237">
             <i className="fa fa-linkedin">&hearts;</i>
-          </Link>
-          <Link to="/">
+          </a>
+          <a href="https://www.pinterest.com/maroufebrahimi/" target="_blank">
             <i className="fa fa-pinterest">&hearts;</i>
-          </Link>
+          </a>
         </div>
       </div>
 

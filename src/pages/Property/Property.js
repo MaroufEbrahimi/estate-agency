@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./Property.css";
 
-import LatestProperty from "../LatestProperty/LatestProperty";
+import LatestProperty from "../../components/LatestProperty/LatestProperty";
 
 const Property = ({
   property_4,

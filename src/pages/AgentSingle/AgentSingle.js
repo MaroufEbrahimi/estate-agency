@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import "./AgentSingle.css";
-import LatestProperty from "../LatestProperty/LatestProperty";
+import LatestProperty from "../../components/LatestProperty/LatestProperty";
 
 const AgentSingle = ({
   agent7,

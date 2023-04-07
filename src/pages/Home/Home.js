@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import LatestProperty from "../LatestProperty/LatestProperty";
-import Agent from "../Agent/Agent";
-import BlogSingle from "../BlogSingle/BlogSingle";
-import Testimonials from "../Testimonials/Testimonials";
+import LatestProperty from "../../components/LatestProperty/LatestProperty";
+import Agent from "../../components/Agent/Agent";
+import BlogSingle from "../../components/BlogSingle/BlogSingle";
+import Testimonials from "../../components/Testimonials/Testimonials";
 
 import "./Home.css";
 

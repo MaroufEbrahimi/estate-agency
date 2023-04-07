@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import BlogSingle from "../../components/BlogSingle/BlogSingle";
 import "./Blog.css";
-import BlogSingle from "../BlogSingle/BlogSingle";
 
 const Blog = ({ blog2, blog3, blog4, blog5, blog6, blog7 }) => {
   return (
