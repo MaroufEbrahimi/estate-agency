@@ -1,8 +1,8 @@
 .footer_details {
   margin-bottom: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-  grid-gap: 6rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
 }
 
 .footer_details_box h1 {
@@ -33,4 +33,12 @@
   color: #2eca6a;
   font-size: 20px;
   margin-right: 4px;
+}
+
+/* media queries */
+@media (max-width: 768px) {
+  .footer_details {
+    grid-template-columns: 1fr;
+    grid-row-gap: 4rem;
+  }
 }
