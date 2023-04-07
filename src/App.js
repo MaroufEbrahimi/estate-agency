@@ -6,16 +6,16 @@ import Footer from "../src/components/Footer/Footer";
 import Layout from "../src/components/Layout/Layout";
 import Modal from "./components/Modal/Modal";
 import ModalContent from "./components/Modal/ModalContent/ModalContent";
-import Home from "./components/Home/Home";
+import Home from "./pages/Home/Home";
 import BackToTop from "./components/BackToTop/BackToTop";
-import About from "./components/About/About";
-import Property from "./components/Property/Property";
-import Blog from "./components/Blog/Blog";
-import Contact from "./components/Contact/Contact";
-import AgentSingle from "./components/AgentSingle/AgentSingle";
-import AgentsGrid from "./components/AgentsGrid/AgentsGrid";
-import PropertySingle from "./components/PropertySingle/PropertySingle";
-import BlogDetails from "./components/BlogDetails/BlogDetails";
+import About from "./pages/About/About";
+import Property from "./pages/Property/Property";
+import Blog from "./pages/Blog/Blog";
+import Contact from "./pages/Contact/Contact";
+import AgentSingle from "./pages/AgentSingle/AgentSingle";
+import AgentsGrid from "./pages/AgentsGrid/AgentsGrid";
+import PropertySingle from "./pages/PropertySingle/PropertySingle";
+import BlogDetails from "./pages/BlogDetails/BlogDetails";
 
 // ###----- images -----###
 // agents
