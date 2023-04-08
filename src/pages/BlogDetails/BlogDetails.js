@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./BlogDetails.css";
 
-const BlogDetails = ({ propertySlide3 }) => {
+const BlogDetails = ({ propertySlide3, author1 }) => {
   return (
     <div className="blog_details">
       <div className="blog_details_title">
@@ -85,35 +85,58 @@ const BlogDetails = ({ propertySlide3 }) => {
       </div>
 
       <div className="blog_details_section3">
-        <div className="blog_details_section3_title">
+        <div className="blog_details_section3_title title_blog_details">
+          <h1>Comments (1)</h1>
+        </div>
+
+        <div className="blog_details_section3_comments">
+          <div className="blog_details_section3_box">
+            <img src={author1} />
+          </div>
+          <div className="blog_details_section3_box">
+            <h3>Marouf Famous</h3>
+            <i>7 Apr 2023</i>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
+              reprehenderit, provident cumque ipsam temporibus maiores quae
+              natus libero optio, at qui beatae ducimus placeat debitis
+              voluptates amet corporis.
+            </p>
+            <Link to="/">Reply</Link>
+          </div>
+        </div>
+      </div>
+
+      <div className="blog_details_section4">
+        <div className="blog_details_section4_title title_blog_details">
           <h1>Leave a Reply</h1>
         </div>
         <form>
-          <div className="blog_details_section3_box">
+          <div className="blog_details_section4_box">
             <label>Enter name</label>
             <input type="text" placeholder="Name *" required />
           </div>
 
-          <div className="blog_details_section3_box">
+          <div className="blog_details_section4_box">
             <label>Enter email</label>
             <input type="email" placeholder="Email *" required />
           </div>
 
-          <div className="blog_details_section3_box full_box">
+          <div className="blog_details_section4_box full_box">
             <label>Enter website</label>
             <input type="text" placeholder="Website" />
           </div>
 
-          <div className="blog_details_section3_box full_box">
+          <div className="blog_details_section4_box full_box">
             <label>Enter message</label>
             <textarea
-              cols="30"
+              cols="40"
               rows="9"
               placeholder="Comment *"
               required
             ></textarea>
           </div>
-          <div className="blog_details_section3_box"></div>
+          <div className="blog_details_section4_box"></div>
         </form>
       </div>
     </div>
