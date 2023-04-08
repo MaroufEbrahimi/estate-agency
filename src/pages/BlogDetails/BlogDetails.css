@@ -130,12 +130,12 @@
   margin-top: 2rem;
 }
 
-.blog_details_section3_title h1 {
+.title_blog_details h1 {
   position: relative;
   padding-bottom: 15px;
 }
 
-.blog_details_section3_title h1::after {
+.title_blog_details h1::after {
   position: absolute;
   content: "";
   top: 100%;
@@ -145,18 +145,53 @@
   background-color: #2eca6a;
 }
 
-.blog_details_section3 form {
+.blog_details_section3_comments {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: 10% 90%;
+}
+
+.blog_details_section3_box img {
+  width: 85px;
+}
+
+.blog_details_section3_box:last-child {
+  margin-left: 20px;
+}
+
+.blog_details_section3_box h3 {
+  font-size: 24px;
+  font-weight: 400;
+  padding-bottom: 14px;
+}
+
+.blog_details_section3_box i {
+  letter-spacing: 0.03em;
+  word-spacing: 0.2em;
+}
+
+.blog_details_section3_box p {
+  padding: 20px 0;
+  line-height: 1.5em;
+}
+
+.blog_details_section4 {
+  padding: 30px 9%;
+  margin-top: 2rem;
+}
+
+.blog_details_section4 form {
   margin-top: 2.5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
 }
 
-.blog_details_section3 .full_box {
+.blog_details_section4 .full_box {
   grid-column: 1/3;
 }
 
-.blog_details_section3_box label {
+.blog_details_section4_box label {
   display: block;
   color: #000;
   font-weight: 500;
@@ -164,8 +199,8 @@
   padding-bottom: 12px;
 }
 
-.blog_details_section3_box input,
-.blog_details_section3_box textarea {
+.blog_details_section4_box input,
+.blog_details_section4_box textarea {
   width: 100%;
   padding: 18px 14px;
   font-size: 18px;
@@ -174,13 +209,13 @@
   transition: border 0.3s ease;
 }
 
-.blog_details_section3_box textarea {
+.blog_details_section4_box textarea {
   padding: 10px;
   resize: vertical;
 }
 
-.blog_details_section3_box input:focus,
-.blog_details_section3_box textarea:focus {
+.blog_details_section4_box input:focus,
+.blog_details_section4_box textarea:focus {
   border-color: #2eca6a;
 }
 
@@ -200,19 +235,31 @@
   .blog_details_section2 {
     padding: 0 8%;
   }
+  .blog_details_section3_box:last-child {
+    margin-left: 50px;
+  }
 }
 
 @media (max-width: 768px) {
+  .blog_details {
+    padding: 30px 5%;
+  }
   .blog_details_section2 {
     padding: 0;
   }
   .blog_details_section3 {
     padding: 0;
   }
-  .blog_details_section3 form {
+  .blog_details_section4 {
+    padding: 0;
+  }
+  .blog_details_section3_box:last-child {
+    margin-left: 70px;
+  }
+  .blog_details_section4 form {
     grid-template-columns: 1fr;
   }
-  .blog_details_section3 .full_box {
+  .blog_details_section4 .full_box {
     grid-column: 1;
   }
 }
