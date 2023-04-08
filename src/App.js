@@ -58,6 +58,9 @@ import testimonial2 from "./assets/testimonials/testimonial-2.jpg";
 import testimonialMini1 from "./assets/testimonials/mini-testimonial-1.jpg";
 import testimonialMini2 from "./assets/testimonials/mini-testimonial-2.jpg";
 
+// Author
+import author1 from "./assets/author/author-1.jpg";
+
 const App = (props) => {
   const [show, handleShow] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -184,7 +187,7 @@ const App = (props) => {
             />
           </Route>
           <Route path="/blog-details">
-            <BlogDetails propertySlide3={propertySlide3} />
+            <BlogDetails propertySlide3={propertySlide3} author1={author1} />
           </Route>
         </Layout>
         <Footer />
