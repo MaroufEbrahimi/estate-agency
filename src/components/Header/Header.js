@@ -27,8 +27,26 @@ const Header = (props) => {
           <li>
             <Link to="/blog">Blog</Link>
           </li>
-          <li>
-            <Link to="/pages">Pages</Link>
+          <li className="nav_menu">
+            <Link to="/pages">
+              Pages <i className="fa fa-angle-down">1</i>
+            </Link>
+            <div className="nav_menu_list">
+              <ul>
+                <li>
+                  <Link to="/property-single">Property Single</Link>
+                </li>
+                <li>
+                  <Link to="/blog-details">Blog Single</Link>
+                </li>
+                <li>
+                  <Link to="/agent-grid">Agents Grid</Link>
+                </li>
+                <li>
+                  <Link to="/agent-single">Agent Single</Link>
+                </li>
+              </ul>
+            </div>
           </li>
           <li>
             <Link to="/contact">Contact</Link>
