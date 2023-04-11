@@ -1,4 +1,22 @@
-# Getting Started with Create React App
+# Features
+
+* Responsive layout
+* Custome Slider
+* Bootstrap icon
+
+# Pages
+
+* Home
+* About
+* Property
+* Blog
+* Property Single
+* Blog Single
+* Agents Grid
+* Agent Single
+* Contact
+
+# Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
