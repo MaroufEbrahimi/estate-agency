@@ -135,3 +135,17 @@
 .property_img_card li span {
   color: #fff;
 }
+
+@media (max-width: 684px) {
+  .property_img_details {
+    bottom: 18%;
+    margin-bottom: 1.2rem;
+  }
+  .latest_property_details:hover img {
+    transform: none;
+  }
+  .property_img_card {
+    opacity: 1;
+    bottom: 0;
+  }
+}
