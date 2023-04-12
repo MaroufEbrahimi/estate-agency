@@ -1,9 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from "react"
+import { Link } from "react-router-dom"
 
-import "./Property.css";
+import "./Property.css"
 
-import LatestProperty from "../../components/LatestProperty/LatestProperty";
+import LatestProperty from "../../components/LatestProperty/LatestProperty"
 
 const Property = ({
   property_4,
@@ -87,8 +87,16 @@ const Property = ({
           />
         </div>
       </div>
-    </div>
-  );
-};
 
-export default Property;
+      <div class="property_pagination">
+        <a href="/">&laquo;</a>
+        <a href="/">1</a>
+        <a href="/" className="active_pagination">2</a>
+        <a href="/">3</a>
+        <a href="/">&raquo;</a>
+      </div>
+    </div>
+  )
+}
+
+export default Property
