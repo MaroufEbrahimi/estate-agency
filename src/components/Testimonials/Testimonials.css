@@ -13,10 +13,10 @@
 }
 
 .testimonials_angles i {
-  font-size: 23px;
+  font-size: 35px;
   font-style: normal;
-  font-weight: 700;
-  margin: 0 0 0 10px;
+  font-weight: 500;
+  margin: 0 0 0 13px;
   color: #535353;
   cursor: pointer;
 }
@@ -38,12 +38,12 @@
 }
 
 .testimonials_details_box > span {
-  padding: 8px 18px;
+  padding: 8px 16px;
   text-align: center;
   background: #2eca6a;
   border-radius: 25px;
   color: #fff;
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .testimonials_text {
