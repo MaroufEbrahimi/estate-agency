@@ -9,7 +9,7 @@
 }
 
 .latest_property_title > h1 {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
 }
 
 .latest_property_title > a {
@@ -20,11 +20,11 @@
 
 .latest_property_title > a span {
   color: #000;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 }
 
 .latest_property_boxes {
-  margin-top: 4rem;
+  padding-top: 2rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, auto));
   grid-gap: 2rem;
@@ -91,15 +91,18 @@
   letter-spacing: 0.02em;
 }
 
-.property_img_details > a {
+.property_img_details a {
   color: #fff;
   letter-spacing: 0.02em;
   font-size: 16px;
+  display: flex;
+  align-items: center;
 }
 
-.property_img_details > i {
+.property_img_details i {
   color: #fff;
   font-size: 22px;
+  margin-left: 10px;
 }
 
 .property_img_card {
