@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from "react"
+import { Link } from "react-router-dom"
 
-import "./LatestProperty.css";
+import "./LatestProperty.css"
 
 const LatestProperty = (props) => {
   return (
@@ -11,8 +11,9 @@ const LatestProperty = (props) => {
         <div className="property_img_details">
           <h3>{props.title}</h3>
           <p>{props.rent}</p>
-          <Link to="/">{props.view}</Link>
-          <i className="fa fa-angle-right"></i>
+          <Link to="/">
+            {props.view} <i className="fa fa-angle-right"></i>
+          </Link>
         </div>
 
         <div className="property_img_card">
@@ -40,7 +41,7 @@ const LatestProperty = (props) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default LatestProperty;
+export default LatestProperty
