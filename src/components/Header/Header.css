@@ -36,13 +36,13 @@
   color: #2eca6a;
 }
 
-.nav_links ul {
+.nav_links {
   display: flex;
 }
 
 .nav_links li {
   position: relative;
-  padding: 10px 14px;
+  padding: 15px 14px;
 }
 
 .nav_links li a::before {
@@ -55,12 +55,12 @@
   transform-origin: bottom left;
 }
 
-.nav_links li a {
+.nav_links a {
   position: relative;
   text-transform: capitalize;
   font-size: 1.1rem;
   color: #000;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.03em;
   transition: all 0.1s ease-in-out;
 }
@@ -71,15 +71,16 @@
   top: 0;
   left: 0;
   right: 0;
-  bottom: -5px;
+  bottom: -4px;
   inset: 10 0 0 0;
   border-bottom: 2px solid #2eca6a;
+  z-index: -1;
   transition: transform 0.3s ease;
 }
 
 .nav_menu_list {
   display: none;
-  animation: ani 0.5s;
+  animation: ani 0.4s;
 }
 
 @keyframes ani {
@@ -88,14 +89,14 @@
   }
 
   to {
-    top: 32px;
+    top: 36px;
   }
 }
 
 .nav_menu:hover .nav_menu_list {
   display: block;
   position: absolute;
-  width: 230px;
+  width: 220px;
   background: #fff;
   box-shadow: 1px 2px 15px rgba(100, 100, 100, 0.3);
   margin-top: 16px;
@@ -103,9 +104,17 @@
   padding-top: 10px;
 }
 
-.nav_menu_list li a {
-  display: flex;
-  flex-direction: column;
+.nav_menu_list li {
+  padding: 13px 18px;
+}
+
+.nav_menu_list li:last-child {
+  padding-bottom: 30px;
+}
+
+.nav_menu_list a {
+  font-size: 16px;
+  transition: color 0.4s ease-in;
 }
 
 .nav_menu_list a:hover {
