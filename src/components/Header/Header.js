@@ -27,8 +27,8 @@ const Header = (props) => {
           <Link to="/blog">Blog</Link>
         </li>
         <li className="nav_menu">
-          <Link to="/pages">
-            Pages <i className="fa fa-angle-down">1</i>
+          <Link>
+            Pages <i className="fa fa-angle-down"></i>
           </Link>
           <div className="nav_menu_list">
             <ul>
