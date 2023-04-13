@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from "react"
+import { Link } from "react-router-dom"
 
-import "./Header.css";
-import SearchIcon from "@mui/icons-material/Search";
+import "./Header.css"
+import SearchIcon from "@mui/icons-material/Search"
 
 const Header = (props) => {
   return (
@@ -13,46 +13,44 @@ const Header = (props) => {
         </Link>
       </div>
 
-      <div className="nav_links">
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/property">Property</Link>
-          </li>
-          <li>
-            <Link to="/blog">Blog</Link>
-          </li>
-          <li className="nav_menu">
-            <Link to="/pages">
-              Pages <i className="fa fa-angle-down">1</i>
-            </Link>
-            <div className="nav_menu_list">
-              <ul>
-                <li>
-                  <Link to="/property-single">Property Single</Link>
-                </li>
-                <li>
-                  <Link to="/blog-details">Blog Single</Link>
-                </li>
-                <li>
-                  <Link to="/agent-grid">Agents Grid</Link>
-                </li>
-                <li>
-                  <Link to="/agent-single">Agent Single</Link>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
-      </div>
+      <ul className="nav_links">
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/property">Property</Link>
+        </li>
+        <li>
+          <Link to="/blog">Blog</Link>
+        </li>
+        <li className="nav_menu">
+          <Link to="/pages">
+            Pages <i className="fa fa-angle-down">1</i>
+          </Link>
+          <div className="nav_menu_list">
+            <ul>
+              <li>
+                <Link to="/property-single">Property Single</Link>
+              </li>
+              <li>
+                <Link to="/blog-details">Blog Single</Link>
+              </li>
+              <li>
+                <Link to="/agent-grid">Agents Grid</Link>
+              </li>
+              <li>
+                <Link to="/agent-single">Agent Single</Link>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+      </ul>
 
       <div className="header_search">
         <button onClick={props.headerSearch}>
@@ -60,7 +58,7 @@ const Header = (props) => {
         </button>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
