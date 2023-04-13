@@ -9,7 +9,7 @@ const Testimonials = (props) => {
         <img src={props.testimonialsObj[1].img} />
       </div>
       <div className="testimonials_details_box">
-        <span className="ion-ios-quote">1</span>
+        <span className="ion-ios-quote"></span>
         <div className="testimonials_text">
           <p>{props.testimonialsObj[1].text}</p>
         </div>
