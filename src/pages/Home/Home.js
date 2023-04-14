@@ -1,12 +1,12 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from "react"
+import { Link } from "react-router-dom"
 
-import LatestProperty from "../../components/LatestProperty/LatestProperty";
-import Agent from "../../components/Agent/Agent";
-import BlogSingle from "../../components/BlogSingle/BlogSingle";
-import Testimonials from "../../components/Testimonials/Testimonials";
+import LatestProperty from "../../components/LatestProperty/LatestProperty"
+import Agent from "../../components/Agent/Agent"
+import BlogSingle from "../../components/BlogSingle/BlogSingle"
+import Testimonials from "../../components/Testimonials/Testimonials"
 
-import "./Home.css";
+import "./Home.css"
 
 const Home = ({
   property_1,
@@ -36,7 +36,7 @@ const Home = ({
       miniImg: testimonialMini2,
       name: "Pablo & Emma",
     },
-  ];
+  ]
 
   return (
     <div className="home">
@@ -45,7 +45,7 @@ const Home = ({
         <div className="our_services_columns">
           <div className="our_services_col">
             <div className="our_services_title">
-              <span className="fa fa-gamepad">2</span>
+              <span className="fa fa-gamepad"></span>
               <h2>Lifestyle</h2>
             </div>
             <p>
@@ -62,7 +62,7 @@ const Home = ({
 
           <div className="our_services_col">
             <div className="our_services_title">
-              <span className="fa fa-usd">2</span>
+              <span className="fa fa-usd"></span>
               <h2>Loans</h2>
             </div>
             <p>
@@ -79,7 +79,7 @@ const Home = ({
 
           <div className="our_services_col">
             <div className="our_services_title">
-              <span className="fa fa-home">2</span>
+              <span className="fa fa-home"></span>
               <h2>Sell</h2>
             </div>
             <p>
@@ -135,7 +135,7 @@ const Home = ({
         <div className="best_agents_title">
           <h1>Best Agents</h1>
           <Link to="/agentGrid">
-            All Agents <span className="fa fa-angle-right"></span>
+            All Agents <i className="fa fa-angle-right"></i>
           </Link>
         </div>
         <div className="best_agents_boxes">
@@ -173,7 +173,7 @@ const Home = ({
         <div className="blog_single_title">
           <h1>Latest News</h1>
           <Link to="/blog">
-            All News <span className="fa fa-angle-right"></span>
+            All News <i className="fa fa-angle-right"></i>
           </Link>
         </div>
         <div className="blog_single_boxes">
@@ -208,8 +208,8 @@ const Home = ({
         <div className="testimonials_title">
           <h1>Testimonials</h1>
           <div className="testimonials_angles">
-            <i className="fa fa-angle-left">&lang;</i>
-            <i className="fa fa-angle-right">&rang;</i>
+            <i className="fa fa-angle-left"></i>
+            <i className="fa fa-angle-right"></i>
           </div>
         </div>
         <div className="testimonials_boxes">
@@ -220,7 +220,7 @@ const Home = ({
       </div>
       {/*  */}
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
