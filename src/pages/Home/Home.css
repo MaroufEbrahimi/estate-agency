@@ -23,7 +23,8 @@
 
 .our_services_title span {
   color: #000;
-  font-size: 5rem;
+  font-size: 4rem;
+  padding: 12px 0;
   width: 180px;
   border: 5.5px solid #2eca6a;
   text-align: center;
@@ -38,6 +39,16 @@
   margin: 15px 0;
   font-size: 16.4px;
   line-height: 1.5em;
+}
+
+.our_services_col a span i {
+  color: #000;
+  padding-top: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.our_services_col a:hover i {
+  color: #2eca6a;
 }
 
 /* media queries */
