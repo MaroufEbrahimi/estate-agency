@@ -23,9 +23,9 @@
   letter-spacing: 0.03em;
 }
 
-.blog_single_title > a span {
+.blog_single_title > a i {
   color: #000;
-  font-size: 1.6rem;
+  font-size: 22px;
 }
 
 .blog_single_boxes {
