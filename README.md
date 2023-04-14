@@ -5,7 +5,7 @@
 * Bootstrap icon
 
 # Demo
- Visit: [Project GP-Famous demo](https://maroufebrahimi.github.io/estate-agency/)
+ Visit: [Project Estate-Agency demo](https://maroufebrahimi.github.io/estate-agency/)
 
 # Pages
 
