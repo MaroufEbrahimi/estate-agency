@@ -24,9 +24,9 @@
   letter-spacing: 0.03em;
 }
 
-.best_agents_title > a span {
+.best_agents_title > a i {
+  font-size: 23px;
   color: #000;
-  font-size: 1.6rem;
 }
 
 .best_agents_boxes {
@@ -73,9 +73,15 @@
   color: #000;
 }
 
+.agent:hover .layer_header_name,
+.agent:hover .agent_layer_text,
+.agent:hover .agent_layer_network,
+.agent:hover .agent_layer_socialmedia {
+  opacity: 1;
+}
+
 .agent:hover .layer_header_name {
   top: 7%;
-  opacity: 1;
 }
 
 .agent_layer_text {
@@ -95,7 +101,6 @@
 
 .agent:hover .agent_layer_text {
   top: 30%;
-  opacity: 1;
 }
 
 .agent_layer_network {
@@ -108,16 +113,40 @@
   transition: all 0.4s ease-in-out;
 }
 
-.agent:hover .agent_layer_network {
-  opacity: 1;
-}
-
 .agent_layer_network p {
   line-height: 2.2em;
 }
 
 .agent_layer_network p > span {
   font-weight: 700;
+}
+
+.agent_layer_socialmedia {
+  position: absolute;
+  width: 100%;
+  bottom: 0%;
+  text-align: center;
+  padding: 0 27px;
+  opacity: 0;
+  color: #000;
+  transition: all 0.4s ease-in-out;
+}
+
+.agent:hover .agent_layer_socialmedia {
+  bottom: 10%;
+}
+
+.agent_layer_socialmedia a {
+  margin: 0 15px;
+}
+
+.agent_layer_socialmedia a:hover {
+  color: #131313;
+}
+
+.agent_layer_socialmedia a i {
+  font-style: normal;
+  font-size: 18px;
 }
 
 @media (max-width: 340px) {
@@ -135,5 +164,15 @@
   .agent_layer_network {
     top: 55%;
     padding: 0 20px;
+  }
+  .agent:hover .agent_layer_socialmedia {
+    bottom: 8%;
+  }
+  .agent_layer_socialmedia a {
+    margin: 0 13px;
+  }
+  .agent_layer_socialmedia a i {
+    font-style: normal;
+    font-size: 16px;
   }
 }
