@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from "react"
+import { Link } from "react-router-dom"
 
-import "./Footer.css";
-import FooterDetails from "./FooterDetails/FooterDetails";
+import "./Footer.css"
+import FooterDetails from "./FooterDetails/FooterDetails"
 
 const Footer = () => {
   return (
@@ -20,21 +20,24 @@ const Footer = () => {
           </div>
 
           <div className="footer_social_links">
-            <Link to="/">
+            <a href="https://twitter.com/01Marouf" target="_blank">
               <i className="fa fa-twitter"></i>
-            </Link>
-            <Link to="/">
+            </a>
+            <a href="https://www.instagram.com/marouffmfm/" target="_blank">
               <i className="fa fa-instagram"></i>
-            </Link>
-            <Link to="/">
+            </a>
+            <a
+              href="https://www.linkedin.com/in/marouf-ebrahimi-7b6312237"
+              target="_blank"
+            >
               <i className="fa fa-linkedin"></i>
-            </Link>
-            <Link to="/">
+            </a>
+            <a href="https://github.com/MaroufEbrahimi" target="_blank">
               <i className="fa fa-github"></i>
-            </Link>
-            <Link to="/">
+            </a>
+            <a href="https://www.pinterest.com/maroufebrahimi/" target="_blank">
               <i className="fa fa-pinterest"></i>
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -48,7 +51,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
