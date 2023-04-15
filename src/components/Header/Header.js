@@ -1,10 +1,12 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "react-router-dom"
 
 import "./Header.css"
 import SearchIcon from "@mui/icons-material/Search"
 
 const Header = (props) => {
+  const [active, setActive] = useState(window.location.pathname)
+
   return (
     <div className={`header ${props.show && "header__height"}`}>
       <div className="header_logo">
@@ -15,16 +17,40 @@ const Header = (props) => {
 
       <ul className="nav_links">
         <li>
-          <Link to="/">Home</Link>
+          <Link
+            to="/"
+            className={active == "/" ? "active" : ""}
+            onClick={() => setActive("/")}
+          >
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link
+            to="/about"
+            className={active == "/about" ? "active" : ""}
+            onClick={() => setActive("/about")}
+          >
+            About
+          </Link>
         </li>
         <li>
-          <Link to="/property">Property</Link>
+          <Link
+            to="/property"
+            className={active == "/property" ? "active" : ""}
+            onClick={() => setActive("/property")}
+          >
+            Property
+          </Link>
         </li>
         <li>
-          <Link to="/blog">Blog</Link>
+          <Link
+            to="/blog"
+            className={active == "/blog" ? "active" : ""}
+            onClick={() => setActive("/blog")}
+          >
+            Blog
+          </Link>
         </li>
         <li className="nav_menu">
           <Link>
@@ -48,7 +74,13 @@ const Header = (props) => {
           </div>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link
+            to="/contact"
+            className={active == "/contact" ? "active" : ""}
+            onClick={() => setActive("/contact")}
+          >
+            Contact
+          </Link>
         </li>
       </ul>
 
