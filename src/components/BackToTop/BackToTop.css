@@ -18,3 +18,7 @@
   border-radius: 25px;
   cursor: pointer;
 }
+.back_to_top button .backToTopIcon {
+  font-size: 30px;
+  font-weight: bold;
+}
