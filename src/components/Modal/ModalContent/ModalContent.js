@@ -1,14 +1,15 @@
-import React from "react";
+import React from "react"
 
-import "./ModalContent.css";
+import "./ModalContent.css"
+import CloseIcon from "@mui/icons-material/Close"
 
 const ModalContent = (props) => {
   return (
     <div className="search_property">
       <div className="search_property_title">
         <h1>search property</h1>
-        <button className="search_property_close" onClick={props.removeModal}>
-          &times;
+        <button onClick={props.removeModal}>
+          <CloseIcon className="search_property_close" />
         </button>
       </div>
 
@@ -85,7 +86,7 @@ const ModalContent = (props) => {
         Search Property
       </button>
     </div>
-  );
-};
+  )
+}
 
-export default ModalContent;
+export default ModalContent
