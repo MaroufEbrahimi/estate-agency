@@ -65,13 +65,17 @@
   transition: all 0.1s ease-in-out;
 }
 
+.active {
+  border-bottom: 2px solid #2eca6a;
+}
+
 .nav_links li a::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  bottom: -4px;
+  bottom: -2px;
   inset: 10 0 0 0;
   border-bottom: 2px solid #2eca6a;
   z-index: -1;
@@ -115,6 +119,7 @@
 .nav_menu_list a {
   font-size: 16px;
   transition: color 0.4s ease-in;
+  color: #000;
 }
 
 .nav_menu_list a:hover {
