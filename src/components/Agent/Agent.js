@@ -38,10 +38,10 @@ const Agent = (props) => {
             >
               <i className="fa fa-linkedin"></i>
             </a>
-            <a href="https://www.pinterest.com/maroufebrahimi/" target="_blank">
+            <a href="https://github.com/MaroufEbrahimi" target="_blank">
               <i className="fa fa-github"></i>
             </a>
-            <a href="/" target="_blank">
+            <a href="https://www.pinterest.com/maroufebrahimi/" target="_blank">
               <i className="fa fa-pinterest"></i>
             </a>
           </div>
