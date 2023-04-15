@@ -25,12 +25,16 @@
 
 .search_property_title button {
   background: transparent;
-  color: #000;
-  font-size: 40px;
-  font-weight: 700;
   border: none;
+  margin-top: 15px;
   outline: none;
   cursor: pointer;
+}
+
+.search_property_title button .search_property_close {
+  color: #000;
+  font-size: 35px;
+  font-weight: 200;
 }
 
 .search_form {
