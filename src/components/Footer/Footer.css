@@ -11,7 +11,7 @@
 .footer_private_links {
   position: relative;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .footer_private_links a {
@@ -19,6 +19,15 @@
   display: inline-block;
   line-height: 0.8em;
   text-transform: capitalize;
+}
+
+.footer_social_links {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.footer_social_links a {
+  margin: 0px 15px;
 }
 
 .footer_copyright {
