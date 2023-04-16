@@ -104,7 +104,7 @@ const App = (props) => {
         <Layout>
           <Router>
             <Switch>
-              <Route path="/" exact>
+              <Route path="/estate-agency" exact>
                 <Modal showBackdrop={showModal} removeModal={modalCloseHandler}>
                   <ModalContent removeModal={modalCloseHandler} />
                 </Modal>

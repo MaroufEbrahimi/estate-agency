@@ -10,7 +10,7 @@ const Header = (props) => {
   return (
     <div className={`header ${props.show && "header__height"}`}>
       <div className="header_logo">
-        <Link to="/">
+        <Link to="/estate-agency">
           Estate<span>Agency</span>
         </Link>
       </div>
@@ -18,9 +18,9 @@ const Header = (props) => {
       <ul className="nav_links">
         <li>
           <Link
-            to="/"
-            className={active == "/" ? "active" : ""}
-            onClick={() => setActive("/")}
+            to="/estate-agency"
+            className={active == "/estate-agency" ? "active" : ""}
+            onClick={() => setActive("/estate-agency")}
           >
             Home
           </Link>
