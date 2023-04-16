@@ -1,5 +1,5 @@
 import React, { useState, useEffect, Suspense } from "react"
-import { BrowserRouter as Router, Route } from "react-router-dom"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
 import Loading from "./components/Loading/Loading"
 import Header from "../src/components/Header/Header"
@@ -17,6 +17,7 @@ import AgentSingle from "./pages/AgentSingle/AgentSingle"
 import AgentsGrid from "./pages/AgentsGrid/AgentsGrid"
 import PropertySingle from "./pages/PropertySingle/PropertySingle"
 import BlogDetails from "./pages/BlogDetails/BlogDetails"
+import NotFound from "./components/NotFound/NotFound"
 
 // ###----- images -----###
 // agents
@@ -100,105 +101,228 @@ const App = (props) => {
   return (
     <Suspense fallback={<Loading />}>
       <div className="app">
-        <Modal showBackdrop={showModal} removeModal={modalCloseHandler}>
-          <ModalContent removeModal={modalCloseHandler} />
-        </Modal>
-        <Router>
-          <Header
-            show={show}
-            handleShow={handleShow}
-            headerSearch={showModalHandler}
-          />
-          <Layout>
-            <Route path="/" exact>
-              <Home
-                property_1={property_1}
-                property_2={property_2}
-                property_3={property_3}
-                agent1={agent1}
-                agent2={agent2}
-                agent3={agent3}
-                blog1={blog1}
-                blog2={blog2}
-                blog3={blog3}
-                testimonial2={testimonial2}
-                testimonial1={testimonial1}
-                testimonialMini1={testimonialMini1}
-                testimonialMini2={testimonialMini2}
-              />
-            </Route>
-            <Route path="/about">
-              <About
-                slideAbout1={slideAbout1}
-                about2={about2}
-                agent7={agent7}
-                agent6={agent6}
-                agent5={agent5}
-              />
-            </Route>
-            <Route path="/property">
-              <Property
-                property_4={property_4}
-                property_5={property_5}
-                property_6={property_6}
-                property_7={property_7}
-                property_8={property_8}
-                property_9={property_9}
-              />
-            </Route>
-            <Route path="/blog">
-              <Blog
-                blog2={blog2}
-                blog3={blog3}
-                blog4={blog4}
-                blog5={blog5}
-                blog6={blog6}
-                blog7={blog7}
-              />
-            </Route>
-            <Route path="/contact" component={Contact} />
-            <Route path="/agent-single">
-              <AgentSingle
-                agent7={agent7}
-                property_4={property_4}
-                property_5={property_5}
-                property_6={property_6}
-                property_7={property_7}
-                property_8={property_8}
-                property_9={property_9}
-              />
-            </Route>
-            <Route path="/agent-grid">
-              <AgentsGrid
-                agent1={agent1}
-                agent2={agent2}
-                agent3={agent3}
-                agent4={agent4}
-                agent5={agent5}
-                agent6={agent6}
-              />
-            </Route>
-            <Route path="/property-single">
-              <PropertySingle
-                currentSlide={currentSlide}
-                setCurrentSlide={setCurrentSlide}
-                agent4={agent4}
-                propertySlide1={propertySlide1}
-                propertySlide2={propertySlide2}
-                propertySlide3={propertySlide3}
-              />
-            </Route>
-            <Route path="/blog-details">
-              <BlogDetails propertySlide3={propertySlide3} author1={author1} />
-            </Route>
-          </Layout>
-          <Footer />
-        </Router>
-        <BackToTop
-          backToTop={backToTop}
-          setBackToTop={setBackToTop}
-          backToTopFun={backToTopFun}
-        />
+        <Layout>
+          <Router>
+            <Switch>
+              <Route path="/" exact>
+                <Modal showBackdrop={showModal} removeModal={modalCloseHandler}>
+                  <ModalContent removeModal={modalCloseHandler} />
+                </Modal>
+                <Header
+                  show={show}
+                  handleShow={handleShow}
+                  headerSearch={showModalHandler}
+                />
+                <Home
+                  property_1={property_1}
+                  property_2={property_2}
+                  property_3={property_3}
+                  agent1={agent1}
+                  agent2={agent2}
+                  agent3={agent3}
+                  blog1={blog1}
+                  blog2={blog2}
+                  blog3={blog3}
+                  testimonial2={testimonial2}
+                  testimonial1={testimonial1}
+                  testimonialMini1={testimonialMini1}
+                  testimonialMini2={testimonialMini2}
+                />
+                <Footer />
+                <BackToTop
+                  backToTop={backToTop}
+                  setBackToTop={setBackToTop}
+                  backToTopFun={backToTopFun}
+                />
+              </Route>
+
+              <Route path="/about">
+                <Modal showBackdrop={showModal} removeModal={modalCloseHandler}>
+                  <ModalContent removeModal={modalCloseHandler} />
+                </Modal>
+                <Header
+                  show={show}
+                  handleShow={handleShow}
+                  headerSearch={showModalHandler}
+                />
+                <About
+                  slideAbout1={slideAbout1}
+                  about2={about2}
+                  agent7={agent7}
+                  agent6={agent6}
+                  agent5={agent5}
+                />
+                <Footer />
+                <BackToTop
+                  backToTop={backToTop}
+                  setBackToTop={setBackToTop}
+                  backToTopFun={backToTopFun}
+                />
+              </Route>
+              <Route path="/property">
+                <Modal showBackdrop={showModal} removeModal={modalCloseHandler}>
+                  <ModalContent removeModal={modalCloseHandler} />
+                </Modal>
+                <Header
+                  show={show}
+                  handleShow={handleShow}
+                  headerSearch={showModalHandler}
+                />
+                <Property
+                  property_4={property_4}
+                  property_5={property_5}
+                  property_6={property_6}
+                  property_7={property_7}
+                  property_8={property_8}
+                  property_9={property_9}
+                />
+                <Footer />
+                <BackToTop
+                  backToTop={backToTop}
+                  setBackToTop={setBackToTop}
+                  backToTopFun={backToTopFun}
+                />
+              </Route>
+              <Route path="/blog">
+                <Modal showBackdrop={showModal} removeModal={modalCloseHandler}>
+                  <ModalContent removeModal={modalCloseHandler} />
+                </Modal>
+                <Header
+                  show={show}
+                  handleShow={handleShow}
+                  headerSearch={showModalHandler}
+                />
+                <Blog
+                  blog2={blog2}
+                  blog3={blog3}
+                  blog4={blog4}
+                  blog5={blog5}
+                  blog6={blog6}
+                  blog7={blog7}
+                />
+                <Footer />
+                <BackToTop
+                  backToTop={backToTop}
+                  setBackToTop={setBackToTop}
+                  backToTopFun={backToTopFun}
+                />
+              </Route>
+              <Route path="/contact">
+                <Modal showBackdrop={showModal} removeModal={modalCloseHandler}>
+                  <ModalContent removeModal={modalCloseHandler} />
+                </Modal>
+                <Header
+                  show={show}
+                  handleShow={handleShow}
+                  headerSearch={showModalHandler}
+                />
+                <Contact />
+                <Footer />
+                <BackToTop
+                  backToTop={backToTop}
+                  setBackToTop={setBackToTop}
+                  backToTopFun={backToTopFun}
+                />
+              </Route>
+              <Route path="/agent-single">
+                <Modal showBackdrop={showModal} removeModal={modalCloseHandler}>
+                  <ModalContent removeModal={modalCloseHandler} />
+                </Modal>
+                <Header
+                  show={show}
+                  handleShow={handleShow}
+                  headerSearch={showModalHandler}
+                />
+                <AgentSingle
+                  agent7={agent7}
+                  property_4={property_4}
+                  property_5={property_5}
+                  property_6={property_6}
+                  property_7={property_7}
+                  property_8={property_8}
+                  property_9={property_9}
+                />
+                <Footer />
+                <BackToTop
+                  backToTop={backToTop}
+                  setBackToTop={setBackToTop}
+                  backToTopFun={backToTopFun}
+                />
+              </Route>
+              <Route path="/agent-grid">
+                <Modal showBackdrop={showModal} removeModal={modalCloseHandler}>
+                  <ModalContent removeModal={modalCloseHandler} />
+                </Modal>
+                <Header
+                  show={show}
+                  handleShow={handleShow}
+                  headerSearch={showModalHandler}
+                />
+                <AgentsGrid
+                  agent1={agent1}
+                  agent2={agent2}
+                  agent3={agent3}
+                  agent4={agent4}
+                  agent5={agent5}
+                  agent6={agent6}
+                />
+                <Footer />
+                <BackToTop
+                  backToTop={backToTop}
+                  setBackToTop={setBackToTop}
+                  backToTopFun={backToTopFun}
+                />
+              </Route>
+              <Route path="/property-single">
+                <Modal showBackdrop={showModal} removeModal={modalCloseHandler}>
+                  <ModalContent removeModal={modalCloseHandler} />
+                </Modal>
+                <Header
+                  show={show}
+                  handleShow={handleShow}
+                  headerSearch={showModalHandler}
+                />
+                <PropertySingle
+                  currentSlide={currentSlide}
+                  setCurrentSlide={setCurrentSlide}
+                  agent4={agent4}
+                  propertySlide1={propertySlide1}
+                  propertySlide2={propertySlide2}
+                  propertySlide3={propertySlide3}
+                />
+                <Footer />
+                <BackToTop
+                  backToTop={backToTop}
+                  setBackToTop={setBackToTop}
+                  backToTopFun={backToTopFun}
+                />
+              </Route>
+              <Route path="/blog-details">
+                <Modal showBackdrop={showModal} removeModal={modalCloseHandler}>
+                  <ModalContent removeModal={modalCloseHandler} />
+                </Modal>
+                <Header
+                  show={show}
+                  handleShow={handleShow}
+                  headerSearch={showModalHandler}
+                />
+                <BlogDetails
+                  propertySlide3={propertySlide3}
+                  author1={author1}
+                />
+                <Footer />
+                <BackToTop
+                  backToTop={backToTop}
+                  setBackToTop={setBackToTop}
+                  backToTopFun={backToTopFun}
+                />
+              </Route>
+              <Route path="*">
+                <NotFound />
+              </Route>
+            </Switch>
+          </Router>
+        </Layout>
       </div>
     </Suspense>
   )

@@ -1,12 +1,11 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import "./Home.css"
 
 import LatestProperty from "../../components/LatestProperty/LatestProperty"
 import Agent from "../../components/Agent/Agent"
 import BlogSingle from "../../components/BlogSingle/BlogSingle"
 import Testimonials from "../../components/Testimonials/Testimonials"
-
-import "./Home.css"
 
 const Home = ({
   property_1,
