@@ -10,13 +10,13 @@ const Header = (props) => {
   return (
     <div className={`header ${props.show && "header__height"}`}>
       <div className="header_logo">
-        <Link to="/estate-agency">
+        <Link to="/estate-agency" onClick={() => setActive("/estate-agency")}>
           Estate<span>Agency</span>
         </Link>
       </div>
 
       <ul className="nav_links">
-        <li>
+        <li onClick={props.backToTopFun}>
           <Link
             to="/estate-agency"
             className={active == "/estate-agency" ? "active" : ""}
@@ -25,7 +25,7 @@ const Header = (props) => {
             Home
           </Link>
         </li>
-        <li>
+        <li onClick={props.backToTopFun}>
           <Link
             to="/about"
             className={active == "/about" ? "active" : ""}
@@ -34,7 +34,7 @@ const Header = (props) => {
             About
           </Link>
         </li>
-        <li>
+        <li onClick={props.backToTopFun}>
           <Link
             to="/property"
             className={active == "/property" ? "active" : ""}
@@ -43,7 +43,7 @@ const Header = (props) => {
             Property
           </Link>
         </li>
-        <li>
+        <li onClick={props.backToTopFun}>
           <Link
             to="/blog"
             className={active == "/blog" ? "active" : ""}
@@ -58,22 +58,46 @@ const Header = (props) => {
           </Link>
           <div className="nav_menu_list">
             <ul>
-              <li>
-                <Link to="/property-single">Property Single</Link>
+              <li onClick={props.backToTopFun}>
+                <Link
+                  to="/property-single"
+                  className={active == "/property-single" ? "active" : ""}
+                  onClick={() => setActive("/property-single")}
+                >
+                  Property Single
+                </Link>
               </li>
-              <li>
-                <Link to="/blog-details">Blog Single</Link>
+              <li onClick={props.backToTopFun}>
+                <Link
+                  to="/blog-details"
+                  className={active == "/blog-details" ? "active" : ""}
+                  onClick={() => setActive("/blog-details")}
+                >
+                  Blog Single
+                </Link>
               </li>
-              <li>
-                <Link to="/agent-grid">Agents Grid</Link>
+              <li onClick={props.backToTopFun}>
+                <Link
+                  to="/agent-grid"
+                  className={active == "/agent-grid" ? "active" : ""}
+                  onClick={() => setActive("/agent-grid")}
+                >
+                  Agents Grid
+                </Link>
               </li>
-              <li>
-                <Link to="/agent-single">Agent Single</Link>
+              <li onClick={props.backToTopFun}>
+                <Link
+                  to="/agent-single"
+                  className={active == "/agent-single" ? "active" : ""}
+                  onClick={() => setActive("/agent-single")}
+                >
+                  Agent Single
+                </Link>
               </li>
             </ul>
           </div>
         </li>
-        <li>
+        <li onClick={props.backToTopFun}>
           <Link
             to="/contact"
             className={active == "/contact" ? "active" : ""}
