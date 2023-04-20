@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from "react"
+import { Link } from "react-router-dom"
 
-import "./Contact.css";
+import "./Contact.css"
 
 const Contact = () => {
   return (
@@ -53,15 +53,15 @@ const Contact = () => {
               <textarea cols="30" rows="8" placeholder="Message"></textarea>
             </div>
           </form>
-            <button className="btn" type="submit">
-              Send Message
-            </button>
+          <button className="btn" type="submit">
+            Send Message
+          </button>
         </div>
 
         <div className="contact_section2_box">
           <div className="contact_info_row">
             <div className="con_info_header">
-              <span className="ion-ios-paper-plane">1</span>
+              <span className="ion-ios-paper-plane"></span>
             </div>
             <div>
               <h3>Say Hello</h3>
@@ -76,7 +76,7 @@ const Contact = () => {
 
           <div className="contact_info_row">
             <div className="con_info_header">
-              <span className="ion-ios-pin">1</span>
+              <span className="ion-ios-pin"></span>
             </div>
             <div>
               <h3>Find us in</h3>
@@ -90,33 +90,39 @@ const Contact = () => {
 
           <div className="contact_info_row">
             <div className="con_info_header">
-              <span className="ion-ios-redo">1</span>
+              <span className="ion-ios-redo"></span>
             </div>
             <div>
               <h3>Social networks</h3>
-              <div className="social_links_contact">
-                <Link to="/">
+              <div className="social_links">
+                <a href="https://twitter.com/01Marouf" target="_blank">
                   <i className="fa fa-twitter"></i>
-                </Link>
-                <Link to="/">
+                </a>
+                <a href="https://www.instagram.com/marouffmfm/" target="_blank">
                   <i className="fa fa-instagram"></i>
-                </Link>
-                <Link to="/">
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/marouf-ebrahimi-7b6312237"
+                  target="_blank"
+                >
                   <i className="fa fa-linkedin"></i>
-                </Link>
-                <Link to="/">
+                </a>
+                <a href="https://github.com/MaroufEbrahimi" target="_blank">
                   <i className="fa fa-github"></i>
-                </Link>
-                <Link to="/">
+                </a>
+                <a
+                  href="https://www.pinterest.com/maroufebrahimi/"
+                  target="_blank"
+                >
                   <i className="fa fa-pinterest"></i>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact
