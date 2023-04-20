@@ -1,0 +1,42 @@
+.comments {
+  position: relative;
+}
+
+.comments ul {
+  padding: 0;
+  margin: 0;
+  margin-top: 3rem;
+}
+
+.comments ul li {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  grid-gap: 1rem;
+  margin-bottom: 4.5rem;
+}
+
+.comments ul li:nth-child(even) {
+  margin-left: 3rem;
+}
+
+.comments ul li img {
+  width: 85px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+.comments ul li h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.comments ul li i {
+  letter-spacing: 0.03em;
+  word-spacing: 0.2em;
+}
+
+.comments ul li p {
+  padding: 20px 0;
+  line-height: 1.5em;
+}
