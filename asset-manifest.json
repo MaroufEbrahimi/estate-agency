@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/estate-agency/static/css/main.4aecd780.css",
-    "main.js": "/estate-agency/static/js/main.d58b0d48.js",
+    "main.css": "/estate-agency/static/css/main.153c9d67.css",
+    "main.js": "/estate-agency/static/js/main.1d7db0ef.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/estate-agency/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/ionicons.svg?v=4.4.5": "/estate-agency/static/media/ionicons.e12b91889f20df4a39b0.svg",
     "static/media/slide-about-1.jpg": "/estate-agency/static/media/slide-about-1.597f22896e68abe29d38.jpg",
@@ -10,6 +10,8 @@
     "static/media/fontawesome-webfont.eot": "/estate-agency/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/estate-agency/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
     "static/media/slide-3.jpg": "/estate-agency/static/media/slide-3.8a2bbc338620df80ed8f.jpg",
+    "static/media/Poppins-Regular.ttf": "/estate-agency/static/media/Poppins-Regular.3c813f59f8b9c1566f24.ttf",
+    "static/media/Poppins-Bold.ttf": "/estate-agency/static/media/Poppins-Bold.d346aa915b3aa516475b.ttf",
     "static/media/ionicons.eot?v=4.4.5": "/estate-agency/static/media/ionicons.f237cb0484eab8b8e0a3.eot",
     "static/media/ionicons.ttf?v=4.4.5": "/estate-agency/static/media/ionicons.fef568f64dd5a32ab65b.ttf",
     "static/media/property-8.jpg": "/estate-agency/static/media/property-8.6cc0a552e953148faa6c.jpg",
@@ -43,11 +45,11 @@
     "static/media/post-7.jpg": "/estate-agency/static/media/post-7.e493eabb0f7c6e63783a.jpg",
     "static/media/post-5.jpg": "/estate-agency/static/media/post-5.577a80c61d0cd701cbae.jpg",
     "index.html": "/estate-agency/index.html",
-    "main.4aecd780.css.map": "/estate-agency/static/css/main.4aecd780.css.map",
-    "main.d58b0d48.js.map": "/estate-agency/static/js/main.d58b0d48.js.map"
+    "main.153c9d67.css.map": "/estate-agency/static/css/main.153c9d67.css.map",
+    "main.1d7db0ef.js.map": "/estate-agency/static/js/main.1d7db0ef.js.map"
   },
   "entrypoints": [
-    "static/css/main.4aecd780.css",
-    "static/js/main.d58b0d48.js"
+    "static/css/main.153c9d67.css",
+    "static/js/main.1d7db0ef.js"
   ]
 }
