@@ -25,7 +25,7 @@ const Agent = (props) => {
               <span>Email:</span> {props.email}
             </p>
           </div>
-          <div className="agent_layer_socialmedia">
+          <div className="agent_layer_socialmedia social_links">
             <a href="https://twitter.com/01Marouf" target="_blank">
               <i className="fa fa-twitter"></i>
             </a>
