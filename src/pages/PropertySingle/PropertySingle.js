@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react"
+import { Link } from "react-router-dom"
 
-import "./PropertySingle.css";
+import "./PropertySingle.css"
 
-import Slider from "./Slider/Slider";
+import Slider from "./Slider/Slider"
 
 const PropertySingle = (props) => {
   return (
@@ -162,22 +162,28 @@ const PropertySingle = (props) => {
                 </li>
               </ul>
 
-              <div className="property_social_links">
-                <Link to="/">
-                  <i className="fa fa-twitter">1</i>
-                </Link>
-                <Link to="/">
-                  <i className="fa fa-instagram">1</i>
-                </Link>
-                <Link to="/">
-                  <i className="fa fa-linkedin">1</i>
-                </Link>
-                <Link to="/">
-                  <i className="fa fa-github">1</i>
-                </Link>
-                <Link to="/">
-                  <i className="fa fa-pinterest">1</i>
-                </Link>
+              <div className="social_links">
+                <a href="https://twitter.com/01Marouf" target="_blank">
+                  <i className="fa fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/marouffmfm/" target="_blank">
+                  <i className="fa fa-instagram"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/marouf-ebrahimi-7b6312237"
+                  target="_blank"
+                >
+                  <i className="fa fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/MaroufEbrahimi" target="_blank">
+                  <i className="fa fa-github"></i>
+                </a>
+                <a
+                  href="https://www.pinterest.com/maroufebrahimi/"
+                  target="_blank"
+                >
+                  <i className="fa fa-pinterest"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -199,7 +205,7 @@ const PropertySingle = (props) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default PropertySingle;
+export default PropertySingle
