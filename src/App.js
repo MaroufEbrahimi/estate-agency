@@ -68,6 +68,7 @@ const App = (props) => {
   const [showModal, setShowModal] = useState(false)
   const [backToTop, setBackToTop] = useState(false)
   const [currentSlide, setCurrentSlide] = useState(0)
+  const [products, setProducts] = useState([])
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -93,8 +94,29 @@ const App = (props) => {
   }
 
   const backToTopFun = () => {
-    window.addEventListener("click", () => {
-      window.scroll(0, 0)
+    window.scroll(0, 0)
+  }
+
+  const addProductHandler = (item) => {
+    fetch(
+      "https://estate-agency-ca974-default-rtdb.firebaseio.com/products.json",
+      {
+        method: "POST",
+        body: JSON.stringify(item),
+        headers: { "Content-Type": "application/json" },
+      }
+    ).then((response) => {
+      response.json().then((responseDate) => {
+        setProducts((prevState) => {
+          return [
+            ...prevState,
+            {
+              id: responseDate.name,
+              ...item,
+            },
+          ]
+        })
+      })
     })
   }
 
@@ -112,6 +134,7 @@ const App = (props) => {
                   show={show}
                   handleShow={handleShow}
                   headerSearch={showModalHandler}
+                  backToTopFun={backToTopFun}
                 />
                 <Home
                   property_1={property_1}
@@ -144,6 +167,7 @@ const App = (props) => {
                   show={show}
                   handleShow={handleShow}
                   headerSearch={showModalHandler}
+                  backToTopFun={backToTopFun}
                 />
                 <About
                   slideAbout1={slideAbout1}
@@ -167,6 +191,7 @@ const App = (props) => {
                   show={show}
                   handleShow={handleShow}
                   headerSearch={showModalHandler}
+                  backToTopFun={backToTopFun}
                 />
                 <Property
                   property_4={property_4}
@@ -191,6 +216,7 @@ const App = (props) => {
                   show={show}
                   handleShow={handleShow}
                   headerSearch={showModalHandler}
+                  backToTopFun={backToTopFun}
                 />
                 <Blog
                   blog2={blog2}
@@ -215,6 +241,7 @@ const App = (props) => {
                   show={show}
                   handleShow={handleShow}
                   headerSearch={showModalHandler}
+                  backToTopFun={backToTopFun}
                 />
                 <Contact />
                 <Footer />
@@ -232,6 +259,7 @@ const App = (props) => {
                   show={show}
                   handleShow={handleShow}
                   headerSearch={showModalHandler}
+                  backToTopFun={backToTopFun}
                 />
                 <AgentSingle
                   agent7={agent7}
@@ -257,6 +285,7 @@ const App = (props) => {
                   show={show}
                   handleShow={handleShow}
                   headerSearch={showModalHandler}
+                  backToTopFun={backToTopFun}
                 />
                 <AgentsGrid
                   agent1={agent1}
@@ -281,6 +310,7 @@ const App = (props) => {
                   show={show}
                   handleShow={handleShow}
                   headerSearch={showModalHandler}
+                  backToTopFun={backToTopFun}
                 />
                 <PropertySingle
                   currentSlide={currentSlide}
@@ -305,10 +335,14 @@ const App = (props) => {
                   show={show}
                   handleShow={handleShow}
                   headerSearch={showModalHandler}
+                  backToTopFun={backToTopFun}
                 />
                 <BlogDetails
                   propertySlide3={propertySlide3}
                   author1={author1}
+                  addProduct={addProductHandler}
+                  products={products}
+                  onRemoveItem={() => {}}
                 />
                 <Footer />
                 <BackToTop
