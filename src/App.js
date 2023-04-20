@@ -71,6 +71,27 @@ const App = (props) => {
   const [products, setProducts] = useState([])
 
   useEffect(() => {
+    fetch(
+      "https://estate-agency-ca974-default-rtdb.firebaseio.com/products.json"
+    )
+      .then((response) => {
+        return response.json()
+      })
+      .then((responseDate) => {
+        const loadedProducts = []
+
+        for (const item in responseDate) {
+          loadedProducts.push({
+            id: item,
+            name: responseDate[item].name,
+            email: responseDate[item].email,
+            comment: responseDate[item].comment,
+          })
+        }
+
+        setProducts(loadedProducts)
+      })
+
     window.addEventListener("scroll", () => {
       if (window.scrollY > 90) {
         setBackToTop(true)
