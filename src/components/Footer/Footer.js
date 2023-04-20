@@ -19,7 +19,7 @@ const Footer = () => {
             <Link to="/contact">Contact</Link>
           </div>
 
-          <div className="footer_social_links">
+          <div className="footer_social_links social_links">
             <a href="https://twitter.com/01Marouf" target="_blank">
               <i className="fa fa-twitter"></i>
             </a>
