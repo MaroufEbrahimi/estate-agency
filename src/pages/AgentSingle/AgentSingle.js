@@ -1,8 +1,8 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from "react"
+import { Link } from "react-router-dom"
 
-import "./AgentSingle.css";
-import LatestProperty from "../../components/LatestProperty/LatestProperty";
+import "./AgentSingle.css"
+import LatestProperty from "../../components/LatestProperty/LatestProperty"
 
 const AgentSingle = ({
   agent7,
@@ -69,22 +69,25 @@ const AgentSingle = ({
             famous fm
           </p>
 
-          <div className="agent_single_social_links">
-            <Link to="/">
+          <div className="social_links">
+            <a href="https://twitter.com/01Marouf" target="_blank">
               <i className="fa fa-twitter"></i>
-            </Link>
-            <Link to="/">
+            </a>
+            <a href="https://www.instagram.com/marouffmfm/" target="_blank">
               <i className="fa fa-instagram"></i>
-            </Link>
-            <Link to="/">
+            </a>
+            <a
+              href="https://www.linkedin.com/in/marouf-ebrahimi-7b6312237"
+              target="_blank"
+            >
               <i className="fa fa-linkedin"></i>
-            </Link>
-            <Link to="/">
+            </a>
+            <a href="https://github.com/MaroufEbrahimi" target="_blank">
               <i className="fa fa-github"></i>
-            </Link>
-            <Link to="/">
+            </a>
+            <a href="https://www.pinterest.com/maroufebrahimi/" target="_blank">
               <i className="fa fa-pinterest"></i>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
@@ -155,7 +158,7 @@ const AgentSingle = ({
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default AgentSingle;
+export default AgentSingle
