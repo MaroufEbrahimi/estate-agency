@@ -1,6 +1,7 @@
 # Features
 
 * Responsive layout
+* Firebase
 * Custome Slider
 * Bootstrap icon
 
