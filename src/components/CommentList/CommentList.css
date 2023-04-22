@@ -40,3 +40,16 @@
   padding: 20px 0;
   line-height: 1.5em;
 }
+
+/* Media Queries */
+@media (max-width: 991px) {
+  .comments ul li > div {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .comments ul li > div {
+    margin-left: 70px;
+  }
+}
