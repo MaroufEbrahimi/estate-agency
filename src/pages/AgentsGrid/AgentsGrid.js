@@ -14,7 +14,7 @@ const AgentsGrid = ({ agent1, agent2, agent3, agent4, agent5, agent6 }) => {
           <p>Grid Properties</p>
         </div>
         <p>
-          <Link to="/">
+          <Link to="/estate-agency">
             <span>Home </span>
           </Link>
           / Agents Grid
@@ -78,7 +78,7 @@ const AgentsGrid = ({ agent1, agent2, agent3, agent4, agent5, agent6 }) => {
         </div>
       </div>
     </div>
-  );
+  )
 };
 
 export default AgentsGrid;

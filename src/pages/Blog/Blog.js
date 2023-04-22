@@ -13,7 +13,7 @@ const Blog = ({ blog2, blog3, blog4, blog5, blog6, blog7 }) => {
           <p>Grid News</p>
         </div>
         <p>
-          <Link to="/">
+          <Link to="/estate-agency">
             <span>Home </span>
           </Link>
           / News Grid
@@ -71,7 +71,7 @@ const Blog = ({ blog2, blog3, blog4, blog5, blog6, blog7 }) => {
         </div>
       </div>
     </div>
-  );
+  )
 };
 
 export default Blog;

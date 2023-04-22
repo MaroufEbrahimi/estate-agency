@@ -12,7 +12,7 @@ const Footer = () => {
       <div className="footer_container">
         <div className="footer_links">
           <div className="footer_private_links">
-            <Link to="/">Home</Link>
+            <Link to="/estate-agency">Home</Link>
             <Link to="/about">About</Link>
             <Link to="/property">Property</Link>
             <Link to="/blog">Blog</Link>
@@ -46,7 +46,10 @@ const Footer = () => {
             © copyright <span>EstateAgency</span> all rights reserved
           </p>
           <p>
-            Designed by <Link to="">MaroufEbrahimi</Link>
+            <span>Development by </span>
+            <a href="https://github.com/MaroufEbrahimi" target="_blank">
+              MaroufEbrahimi
+            </a>
           </p>
         </div>
       </div>

@@ -23,7 +23,7 @@ const BlogDetails = ({ propertySlide3, author1, addProduct, products }) => {
           <p>News Single.</p>
         </div>
         <p>
-          <Link to="/">
+          <Link to="/estate-agency">
             <span>Home </span>
           </Link>
           / Book Cover Deisgn

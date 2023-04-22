@@ -133,7 +133,7 @@ const Home = ({
       <div className="best_agents">
         <div className="best_agents_title">
           <h1>Best Agents</h1>
-          <Link to="/agentGrid">
+          <Link to="/agent-grid">
             All Agents <i className="fa fa-angle-right"></i>
           </Link>
         </div>

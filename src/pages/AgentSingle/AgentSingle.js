@@ -21,7 +21,7 @@ const AgentSingle = ({
           <p>Agent Immobiliari</p>
         </div>
         <p>
-          <Link to="/">
+          <Link to="/estate-agency">
             <span>Home </span>
           </Link>
           /

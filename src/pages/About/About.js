@@ -1,9 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from "react"
+import { Link } from "react-router-dom"
 
-import Agent from "../../components/Agent/Agent";
+import Agent from "../../components/Agent/Agent"
 
-import "./About.css";
+import "./About.css"
 
 const About = ({ slideAbout1, about2, agent7, agent6, agent5 }) => {
   return (
@@ -12,7 +12,7 @@ const About = ({ slideAbout1, about2, agent7, agent6, agent5 }) => {
         <div className="about_title">
           <h1>We Do Great Design For Creative Folks</h1>
           <p>
-            <Link to="/">
+            <Link to="/estate-agency">
               <span>Home </span>
             </Link>
             / About
@@ -93,7 +93,7 @@ const About = ({ slideAbout1, about2, agent7, agent6, agent5 }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default About;
+export default About

@@ -14,11 +14,11 @@ const PropertySingle = (props) => {
           <p>Chicago, IL 606543</p>
         </div>
         <p>
-          <Link to="/">
+          <Link to="/estate-agency">
             <span>Home </span>
           </Link>
           /
-          <Link to="/">
+          <Link to="/estate-agency">
             <span> Properties </span>
           </Link>
           / 304 Blaster Up

@@ -21,7 +21,7 @@ const Property = ({
           <p>Grid Properties</p>
         </div>
         <p>
-          <Link to="/">
+          <Link to="/estate-agency">
             <span>Home </span>
           </Link>
           / Properties Grid
@@ -91,7 +91,9 @@ const Property = ({
       <div class="property_pagination">
         <a href="/">&laquo;</a>
         <a href="/">1</a>
-        <a href="/" className="active_pagination">2</a>
+        <a href="/" className="active_pagination">
+          2
+        </a>
         <a href="/">3</a>
         <a href="/">&raquo;</a>
       </div>
