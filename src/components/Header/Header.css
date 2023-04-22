@@ -93,7 +93,7 @@
   }
 
   to {
-    top: 36px;
+    top: 40px;
   }
 }
 
@@ -102,7 +102,8 @@
   position: absolute;
   width: 220px;
   background: #fff;
-  box-shadow: 1px 2px 15px rgba(100, 100, 100, 0.3);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   margin-top: 16px;
   border-top: 4px solid #2eca6a;
   padding-top: 10px;
