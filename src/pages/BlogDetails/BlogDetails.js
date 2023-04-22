@@ -1,9 +1,20 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react"
+import { Link } from "react-router-dom"
 
-import "./BlogDetails.css";
+import "./BlogDetails.css"
+import CommentList from "../../components/CommentList/CommentList"
 
-const BlogDetails = ({ propertySlide3, author1 }) => {
+const BlogDetails = ({ propertySlide3, author1, addProduct, products }) => {
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [comment, setComment] = useState("")
+
+  const submitHandler = (e) => {
+    e.preventDefault()
+
+    addProduct({ name: name, email: email, comment: comment })
+  }
+
   return (
     <div className="blog_details">
       <div className="blog_details_title">
@@ -70,16 +81,16 @@ const BlogDetails = ({ propertySlide3, author1 }) => {
         <div className="blog_details_social_links">
           <span>Share: </span>
           <a href="https://twitter.com/01Marouf" target="_blank">
-            <i className="fa fa-twitter">&hearts;</i>
+            <i className="fa fa-twitter"></i>
           </a>
           <a href="https://www.instagram.com/marouffmfm/" target="_blank">
-            <i className="fa fa-instagram">&hearts;</i>
+            <i className="fa fa-instagram"></i>
           </a>
           <a href="https://www.linkedin.com/in/marouf-ebrahimi-7b6312237">
-            <i className="fa fa-linkedin">&hearts;</i>
+            <i className="fa fa-linkedin"></i>
           </a>
           <a href="https://www.pinterest.com/maroufebrahimi/" target="_blank">
-            <i className="fa fa-pinterest">&hearts;</i>
+            <i className="fa fa-pinterest"></i>
           </a>
         </div>
       </div>
@@ -89,58 +100,66 @@ const BlogDetails = ({ propertySlide3, author1 }) => {
           <h1>Comments (1)</h1>
         </div>
 
-        <div className="blog_details_section3_comments">
-          <div className="blog_details_section3_box">
-            <img src={author1} />
-          </div>
-          <div className="blog_details_section3_box">
-            <h3>Marouf Famous</h3>
-            <i>7 Apr 2023</i>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
-              reprehenderit, provident cumque ipsam temporibus maiores quae
-              natus libero optio, at qui beatae ducimus placeat debitis
-              voluptates amet corporis.
-            </p>
-            <Link to="/">Reply</Link>
-          </div>
+        <div>
+          <CommentList products={products} author1={author1} />
         </div>
       </div>
 
       <div className="blog_details_section4">
         <div className="blog_details_section4_title title_blog_details">
-          <h1>Leave a Reply</h1>
+          <h1>Leave a Comment</h1>
         </div>
-        <form>
+        <form onSubmit={submitHandler}>
           <div className="blog_details_section4_box">
             <label>Enter name</label>
-            <input type="text" placeholder="Name *" required />
+            <input
+              type="text"
+              id="customer_name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Name *"
+              required
+            />
           </div>
 
           <div className="blog_details_section4_box">
             <label>Enter email</label>
-            <input type="email" placeholder="Email *" required />
+            <input
+              type="email"
+              id="email_address"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Email *"
+              required
+            />
           </div>
 
-          <div className="blog_details_section4_box full_box">
+          {/* <div className="blog_details_section4_box full_box">
             <label>Enter website</label>
             <input type="text" placeholder="Website" />
-          </div>
+          </div> */}
 
           <div className="blog_details_section4_box full_box">
             <label>Enter message</label>
             <textarea
               cols="40"
-              rows="9"
+              rows="5"
+              id="comment"
+              value={comment}
+              onChange={(e) => setComment(e.target.value)}
               placeholder="Comment *"
               required
             ></textarea>
           </div>
-          <div className="blog_details_section4_box"></div>
+          <div className="blog_details_section4_box">
+            <button type="submit" className="btn bolg_details_btn">
+              Send Comment
+            </button>
+          </div>
         </form>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default BlogDetails;
+export default BlogDetails
