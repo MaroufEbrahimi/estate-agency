@@ -46,7 +46,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 99.2%;
+  height: 98.4%;
   background: transparent;
   transition: all 0.4s ease-in-out;
 }
@@ -136,17 +136,14 @@
   bottom: 10%;
 }
 
-.agent_layer_socialmedia a {
-  margin: 0 15px;
-}
-
 .agent_layer_socialmedia a:hover {
   color: #131313;
 }
 
-.agent_layer_socialmedia a i {
-  font-style: normal;
-  font-size: 18px;
+@media (max-width: 653px) {
+  .agent_layer_details {
+    height: 99%;
+  }
 }
 
 @media (max-width: 340px) {
@@ -174,5 +171,8 @@
   .agent_layer_socialmedia a i {
     font-style: normal;
     font-size: 16px;
+  }
+  .agent_layer_details {
+    height: 98.3%;
   }
 }
