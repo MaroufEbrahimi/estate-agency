@@ -8,11 +8,13 @@ const BlogDetails = ({ propertySlide3, author1, addProduct, products }) => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [comment, setComment] = useState("")
+  const [commentCounter, setCommentCounter] = useState(0)
 
   const submitHandler = (e) => {
     e.preventDefault()
 
     addProduct({ name: name, email: email, comment: comment })
+    setCommentCounter(commentCounter + 1)
   }
 
   return (
@@ -97,7 +99,7 @@ const BlogDetails = ({ propertySlide3, author1, addProduct, products }) => {
 
       <div className="blog_details_section3">
         <div className="blog_details_section3_title title_blog_details">
-          <h1>Comments (1)</h1>
+          <h1>Comments ({commentCounter})</h1>
         </div>
 
         <div>
