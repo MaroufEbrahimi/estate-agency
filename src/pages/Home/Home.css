@@ -1,5 +1,9 @@
-.home {
+.container {
   padding: 30px 9%;
+}
+
+.our_services {
+  margin-top: 7rem;
 }
 
 .our_services > h1 {
@@ -53,7 +57,7 @@
 
 /* media queries */
 @media (max-width: 1141px) {
-  .home {
+  .container {
     padding: 30px 4%;
   }
 }
