@@ -20,6 +20,9 @@ import BlogDetails from "./pages/BlogDetails/BlogDetails"
 import NotFound from "./components/NotFound/NotFound"
 
 // ###----- images -----###
+// slider
+import slide1 from "./assets/agents/slider/slide-1.jpg"
+
 // agents
 import slideAbout1 from "./assets/about/slide-about-1.jpg"
 import about2 from "./assets/about/about-2.jpg"
@@ -158,6 +161,7 @@ const App = (props) => {
                   backToTopFun={backToTopFun}
                 />
                 <Home
+                  slide1={slide1}
                   property_1={property_1}
                   property_2={property_2}
                   property_3={property_3}

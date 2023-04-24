@@ -6,8 +6,10 @@ import LatestProperty from "../../components/LatestProperty/LatestProperty"
 import Agent from "../../components/Agent/Agent"
 import BlogSingle from "../../components/BlogSingle/BlogSingle"
 import Testimonials from "../../components/Testimonials/Testimonials"
+import ShowCase from "../../components/ShowCase/ShowCase"
 
 const Home = ({
+  slide1,
   property_1,
   property_2,
   property_3,
@@ -39,7 +41,9 @@ const Home = ({
 
   return (
     <div className="home">
-      <div className="our_services">
+      <ShowCase slide1={slide1} />
+
+      <div className="our_services container">
         <h1>our services</h1>
         <div className="our_services_columns">
           <div className="our_services_col">
@@ -95,7 +99,7 @@ const Home = ({
         </div>
       </div>
       {/* Latest Property */}
-      <div className="latest_property">
+      <div className="latest_property container">
         <div className="latest_property_title">
           <h1>Latest Properties</h1>
           <Link to="/property">
@@ -130,7 +134,7 @@ const Home = ({
         </div>
       </div>
       {/* Best Agents */}
-      <div className="best_agents">
+      <div className="best_agents container">
         <div className="best_agents_title">
           <h1>Best Agents</h1>
           <Link to="/agent-grid">
@@ -168,7 +172,7 @@ const Home = ({
         </div>
       </div>
       {/* Blog */}
-      <div className="latest_news">
+      <div className="latest_news container">
         <div className="blog_single_title">
           <h1>Latest News</h1>
           <Link to="/blog">
@@ -203,7 +207,7 @@ const Home = ({
         </div>
       </div>
       {/* Testimonials */}
-      <div className="testimonials">
+      <div className="testimonials container">
         <div className="testimonials_title">
           <h1>Testimonials</h1>
           <div className="testimonials_angles">
