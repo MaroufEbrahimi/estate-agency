@@ -3,10 +3,10 @@ import { Link } from "react-router-dom"
 
 import "./Contact.css"
 
-const Contact = () => {
+const Contact = ({ setActive }) => {
   return (
     <div className="contact">
-      <div className="contact_title">
+      <div className="contact_title every_pages_title">
         <div>
           <h1>Contact US</h1>
           <p>
@@ -18,7 +18,7 @@ const Contact = () => {
           </p>
         </div>
         <p>
-          <Link to="/estate-agency">
+          <Link to="/estate-agency" onClick={() => setActive("/estate-agency")}>
             <span>Home </span>
           </Link>
           / Contact
