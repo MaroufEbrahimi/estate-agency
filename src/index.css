@@ -88,10 +88,10 @@ a:hover {
 
 /* social links */
 
-.social_links {
-  /* text-align: center;
-  margin-bottom: 15px; */
-}
+/* .social_links {
+  text-align: center;
+  margin-bottom: 15px;
+} */
 
 .social_links a {
   margin: 0px 12px;
@@ -100,4 +100,88 @@ a:hover {
 .social_links a i {
   font-style: normal;
   font-size: 18px;
+}
+
+/* Title for every pages */
+.every_pages_title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.every_pages_title > div {
+  border-left: 3px solid #2eca6a;
+  padding: 20px;
+  padding-left: 30px;
+}
+
+.every_pages_title > div h1 {
+  font-size: 2.5rem;
+  border-radius: 2px;
+}
+
+.every_pages_title > div p {
+  padding-top: 12px;
+}
+
+.every_pages_title > p {
+  margin-top: 40px;
+  font-size: 16px;
+  color: #555;
+  letter-spacing: 0.04em;
+  word-spacing: 0.02em;
+  font-weight: 100;
+}
+
+/* media queries */
+@media (max-width: 941px) {
+  .every_pages_title {
+    flex-direction: column;
+  }
+  .every_pages_title > div h1 {
+    font-size: 2rem;
+    width: 100%;
+  }
+  .every_pages_title > p {
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+}
+
+/* Title for home page */
+.home_page_titles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home_page_titles > h1 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 1.1em;
+}
+
+.home_page_titles a {
+  color: #000;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+  line-height: 0.6em;
+}
+
+.home_page_titles a i {
+  color: #000;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 538px) {
+  .home_page_titles > h1 {
+    font-size: 2rem;
+  }
+  .home_page_titles a {
+    font-size: 16px;
+    letter-spacing: 0.01em;
+  }
+  .home_page_titles a i {
+    font-size: 1rem;
+  }
 }
