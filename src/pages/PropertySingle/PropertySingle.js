@@ -8,17 +8,23 @@ import Slider from "./Slider/Slider"
 const PropertySingle = (props) => {
   return (
     <div className="property_single">
-      <div className="property_single_title">
+      <div className="property_single_title every_pages_title">
         <div>
           <h1>304 Blaster Up</h1>
           <p>Chicago, IL 606543</p>
         </div>
         <p>
-          <Link to="/estate-agency">
+          <Link
+            to="/estate-agency"
+            onClick={() => props.setActive("/estate-agency")}
+          >
             <span>Home </span>
           </Link>
           /
-          <Link to="/estate-agency">
+          <Link
+            to="/estate-agency"
+            onClick={() => props.setActive("/estate-agency")}
+          >
             <span> Properties </span>
           </Link>
           / 304 Blaster Up
