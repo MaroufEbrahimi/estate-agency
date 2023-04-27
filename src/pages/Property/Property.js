@@ -12,16 +12,17 @@ const Property = ({
   property_7,
   property_8,
   property_9,
+  setActive,
 }) => {
   return (
     <div className="property">
-      <div className="property_title">
+      <div className="property_title every_pages_title">
         <div>
           <h1>Our Amazing Properties</h1>
           <p>Grid Properties</p>
         </div>
         <p>
-          <Link to="/estate-agency">
+          <Link to="/estate-agency" onClick={() => setActive("/estate-agency")}>
             <span>Home </span>
           </Link>
           / Properties Grid
