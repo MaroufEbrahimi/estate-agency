@@ -2,27 +2,6 @@
   margin-top: 90px;
 }
 
-.latest_property_title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.latest_property_title > h1 {
-  font-size: 2.6rem;
-}
-
-.latest_property_title > a {
-  color: #000;
-  font-size: 18px;
-  letter-spacing: 0.03em;
-}
-
-.latest_property_title > a span {
-  color: #000;
-  font-size: 1.3rem;
-}
-
 .latest_property_boxes {
   padding-top: 2rem;
   display: grid;
