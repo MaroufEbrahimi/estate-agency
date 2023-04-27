@@ -3,7 +3,7 @@
 }
 
 .our_services {
-  margin-top: 7rem;
+  margin-top: 4rem;
 }
 
 .our_services > h1 {
@@ -77,5 +77,11 @@
   }
   .our_services_title h2 {
     font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 538px) {
+  .our_services > h1 {
+    font-size: 2rem;
   }
 }
