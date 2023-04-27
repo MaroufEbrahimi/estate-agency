@@ -23,6 +23,8 @@ const Home = ({
   testimonial2,
   testimonialMini1,
   testimonialMini2,
+  setActive,
+  backToTopFun,
 }) => {
   const testimonialsObj = [
     {
@@ -100,11 +102,13 @@ const Home = ({
       </div>
       {/* Latest Property */}
       <div className="latest_property container">
-        <div className="latest_property_title">
+        <div className="latest_property_title home_page_titles">
           <h1>Latest Properties</h1>
-          <Link to="/property">
-            All Property <span className="fa fa-angle-right"></span>
-          </Link>
+          <p onClick={backToTopFun}>
+            <Link to="/property" onClick={() => setActive("/property")}>
+              All Property <i className="fa fa-angle-right"></i>
+            </Link>
+          </p>
         </div>
         <div className="latest_property_boxes">
           <div className="latest_property_box">
@@ -135,11 +139,13 @@ const Home = ({
       </div>
       {/* Best Agents */}
       <div className="best_agents container">
-        <div className="best_agents_title">
+        <div className="best_agents_title home_page_titles">
           <h1>Best Agents</h1>
-          <Link to="/agent-grid">
-            All Agents <i className="fa fa-angle-right"></i>
-          </Link>
+          <p onClick={backToTopFun}>
+            <Link to="/agent-grid" onClick={() => setActive("/agent-grid")}>
+              All Agents <i className="fa fa-angle-right"></i>
+            </Link>
+          </p>
         </div>
         <div className="best_agents_boxes">
           <div className="best_agents_box">
@@ -173,11 +179,13 @@ const Home = ({
       </div>
       {/* Blog */}
       <div className="latest_news container">
-        <div className="blog_single_title">
+        <div className="blog_single_title home_page_titles">
           <h1>Latest News</h1>
-          <Link to="/blog">
-            All News <i className="fa fa-angle-right"></i>
-          </Link>
+          <p onClick={backToTopFun}>
+            <Link to="/blog" onClick={() => setActive("/blog")}>
+              All News <i className="fa fa-angle-right"></i>
+            </Link>
+          </p>
         </div>
         <div className="blog_single_boxes">
           <div className="blog_single_box">
@@ -208,7 +216,7 @@ const Home = ({
       </div>
       {/* Testimonials */}
       <div className="testimonials container">
-        <div className="testimonials_title">
+        <div className="testimonials_title home_page_titles">
           <h1>Testimonials</h1>
           <div className="testimonials_angles">
             <i className="fa fa-angle-left"></i>
