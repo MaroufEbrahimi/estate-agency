@@ -1,20 +1,28 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from "react"
+import { Link } from "react-router-dom"
 
-import Agent from "../../components/Agent/Agent";
+import Agent from "../../components/Agent/Agent"
 
-import "./AgentsGrid.css";
+import "./AgentsGrid.css"
 
-const AgentsGrid = ({ agent1, agent2, agent3, agent4, agent5, agent6 }) => {
+const AgentsGrid = ({
+  agent1,
+  agent2,
+  agent3,
+  agent4,
+  agent5,
+  agent6,
+  setActive,
+}) => {
   return (
     <div className="agent_grid">
-      <div className="agent_grid_title">
+      <div className="agent_grid_title every_pages_title">
         <div>
           <h1>Our Amazing Agents</h1>
           <p>Grid Properties</p>
         </div>
-        <p>
-          <Link to="/estate-agency">
+        <p >
+          <Link to="/estate-agency" onClick={() => setActive("/estate-agency")}>
             <span>Home </span>
           </Link>
           / Agents Grid
@@ -79,6 +87,6 @@ const AgentsGrid = ({ agent1, agent2, agent3, agent4, agent5, agent6 }) => {
       </div>
     </div>
   )
-};
+}
 
-export default AgentsGrid;
+export default AgentsGrid
