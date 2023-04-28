@@ -1,16 +1,17 @@
-import React, { useState } from "react"
+import React from "react"
 import { Link } from "react-router-dom"
 
 import "./Header.css"
 import SearchIcon from "@mui/icons-material/Search"
 
 const Header = (props) => {
-  const [active, setActive] = useState(window.location.pathname)
-
   return (
     <div className={`header ${props.show && "header__height"}`}>
       <div className="header_logo">
-        <Link to="/estate-agency" onClick={() => setActive("/estate-agency")}>
+        <Link
+          to="/estate-agency"
+          onClick={() => props.setActive("/estate-agency")}
+        >
           Estate<span>Agency</span>
         </Link>
       </div>
@@ -19,8 +20,8 @@ const Header = (props) => {
         <li onClick={props.backToTopFun}>
           <Link
             to="/estate-agency"
-            className={active == "/estate-agency" ? "active" : ""}
-            onClick={() => setActive("/estate-agency")}
+            className={props.active == "/estate-agency" ? "active" : ""}
+            onClick={() => props.setActive("/estate-agency")}
           >
             Home
           </Link>
@@ -28,8 +29,8 @@ const Header = (props) => {
         <li onClick={props.backToTopFun}>
           <Link
             to="/about"
-            className={active == "/about" ? "active" : ""}
-            onClick={() => setActive("/about")}
+            className={props.active == "/about" ? "active" : ""}
+            onClick={() => props.setActive("/about")}
           >
             About
           </Link>
@@ -37,8 +38,8 @@ const Header = (props) => {
         <li onClick={props.backToTopFun}>
           <Link
             to="/property"
-            className={active == "/property" ? "active" : ""}
-            onClick={() => setActive("/property")}
+            className={props.active == "/property" ? "active" : ""}
+            onClick={() => props.setActive("/property")}
           >
             Property
           </Link>
@@ -46,8 +47,8 @@ const Header = (props) => {
         <li onClick={props.backToTopFun}>
           <Link
             to="/blog"
-            className={active == "/blog" ? "active" : ""}
-            onClick={() => setActive("/blog")}
+            className={props.active == "/blog" ? "active" : ""}
+            onClick={() => props.setActive("/blog")}
           >
             Blog
           </Link>
@@ -61,8 +62,8 @@ const Header = (props) => {
               <li onClick={props.backToTopFun}>
                 <Link
                   to="/property-single"
-                  className={active == "/property-single" ? "active" : ""}
-                  onClick={() => setActive("/property-single")}
+                  className={props.active == "/property-single" ? "active" : ""}
+                  onClick={() => props.setActive("/property-single")}
                 >
                   Property Single
                 </Link>
@@ -70,8 +71,8 @@ const Header = (props) => {
               <li onClick={props.backToTopFun}>
                 <Link
                   to="/blog-details"
-                  className={active == "/blog-details" ? "active" : ""}
-                  onClick={() => setActive("/blog-details")}
+                  className={props.active == "/blog-details" ? "active" : ""}
+                  onClick={() => props.setActive("/blog-details")}
                 >
                   Blog Single
                 </Link>
@@ -79,8 +80,8 @@ const Header = (props) => {
               <li onClick={props.backToTopFun}>
                 <Link
                   to="/agent-grid"
-                  className={active == "/agent-grid" ? "active" : ""}
-                  onClick={() => setActive("/agent-grid")}
+                  className={props.active == "/agent-grid" ? "active" : ""}
+                  onClick={() => props.setActive("/agent-grid")}
                 >
                   Agents Grid
                 </Link>
@@ -88,8 +89,8 @@ const Header = (props) => {
               <li onClick={props.backToTopFun}>
                 <Link
                   to="/agent-single"
-                  className={active == "/agent-single" ? "active" : ""}
-                  onClick={() => setActive("/agent-single")}
+                  className={props.active == "/agent-single" ? "active" : ""}
+                  onClick={() => props.setActive("/agent-single")}
                 >
                   Agent Single
                 </Link>
@@ -100,8 +101,8 @@ const Header = (props) => {
         <li onClick={props.backToTopFun}>
           <Link
             to="/contact"
-            className={active == "/contact" ? "active" : ""}
-            onClick={() => setActive("/contact")}
+            className={props.active == "/contact" ? "active" : ""}
+            onClick={() => props.setActive("/contact")}
           >
             Contact
           </Link>
