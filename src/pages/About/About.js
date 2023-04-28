@@ -5,14 +5,17 @@ import Agent from "../../components/Agent/Agent"
 
 import "./About.css"
 
-const About = ({ slideAbout1, about2, agent7, agent6, agent5 }) => {
+const About = ({ slideAbout1, about2, agent7, agent6, agent5, setActive }) => {
   return (
     <div className="about">
       <div className="section_1">
-        <div className="about_title">
+        <div className="about_title every_pages_title">
           <h1>We Do Great Design For Creative Folks</h1>
           <p>
-            <Link to="/estate-agency">
+            <Link
+              to="/estate-agency"
+              onClick={() => setActive("/estate-agency")}
+            >
               <span>Home </span>
             </Link>
             / About
@@ -59,7 +62,7 @@ const About = ({ slideAbout1, about2, agent7, agent6, agent5 }) => {
       </div>
 
       <div className="meet_our_team">
-        <div className="best_agents_title">
+        <div className="best_agents_title blog_single_title">
           <h1>Meet Our Team</h1>
         </div>
         <div className="best_agents_boxes">
