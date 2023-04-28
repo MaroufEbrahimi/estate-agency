@@ -12,21 +12,22 @@ const AgentSingle = ({
   property_7,
   property_8,
   property_9,
+  setActive,
 }) => {
   return (
     <div className="agent_single">
-      <div className="agent_single_title">
+      <div className="agent_single_title every_pages_title">
         <div>
           <h1>Margaret Stone</h1>
           <p>Agent Immobiliari</p>
         </div>
         <p>
-          <Link to="/estate-agency">
+          <Link to="/estate-agency" onClick={() => setActive("/estate-agency")}>
             <span>Home </span>
           </Link>
           /
-          <Link to="/">
-            <span> Agents </span>
+          <Link to="/estate-agency" onClick={() => setActive("/estate-agency")}>
+            <span> Properties </span>
           </Link>
           / Margaret Stone
         </p>
