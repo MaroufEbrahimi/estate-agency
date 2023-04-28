@@ -4,7 +4,13 @@ import { Link } from "react-router-dom"
 import "./BlogDetails.css"
 import CommentList from "../../components/CommentList/CommentList"
 
-const BlogDetails = ({ propertySlide3, author1, addProduct, products }) => {
+const BlogDetails = ({
+  propertySlide3,
+  author1,
+  addProduct,
+  products,
+  setActive,
+}) => {
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
   const [comment, setComment] = useState("")
@@ -19,13 +25,13 @@ const BlogDetails = ({ propertySlide3, author1, addProduct, products }) => {
 
   return (
     <div className="blog_details">
-      <div className="blog_details_title">
+      <div className="blog_details_title every_pages_title">
         <div>
           <h1>Book Cover Deisgn</h1>
           <p>News Single.</p>
         </div>
         <p>
-          <Link to="/estate-agency">
+          <Link to="/estate-agency" onClick={() => setActive("/estate-agency")}>
             <span>Home </span>
           </Link>
           / Book Cover Deisgn
