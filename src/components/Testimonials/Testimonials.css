@@ -2,16 +2,6 @@
   margin-top: 7rem;
 }
 
-.testimonials_title {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.testimonials_title > h1 {
-  font-size: 2.5rem;
-}
-
 .testimonials_angles i {
   font-size: 35px;
   font-style: normal;
