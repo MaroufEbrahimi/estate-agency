@@ -13,10 +13,10 @@ const FooterDetails = () => {
           aliquip exea commodo consequat duis sed aute irure.
         </p>
         <p>
-          Phone . <span>famous@gmail.com</span>
+          Phone . <span>+93 123 456 789</span>
         </p>
         <p>
-          Email . <span>+93 123 456 789</span>
+          Email . <span>famous@gmail.com</span>
         </p>
       </div>
 
@@ -92,7 +92,7 @@ const FooterDetails = () => {
         </ul>
       </div>
     </div>
-  );
+  )
 };
 
 export default FooterDetails;
