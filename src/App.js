@@ -72,6 +72,7 @@ const App = (props) => {
   const [backToTop, setBackToTop] = useState(false)
   const [currentSlide, setCurrentSlide] = useState(0)
   const [products, setProducts] = useState([])
+  const [active, setActive] = useState(window.location.pathname)
 
   useEffect(() => {
     fetch(
@@ -155,6 +156,8 @@ const App = (props) => {
                   <ModalContent removeModal={modalCloseHandler} />
                 </Modal>
                 <Header
+                  active={active}
+                  setActive={setActive}
                   show={show}
                   handleShow={handleShow}
                   headerSearch={showModalHandler}
@@ -175,8 +178,14 @@ const App = (props) => {
                   testimonial1={testimonial1}
                   testimonialMini1={testimonialMini1}
                   testimonialMini2={testimonialMini2}
+                  setActive={setActive}
+                  backToTopFun={backToTopFun}
                 />
-                <Footer />
+                <Footer
+                  active={active}
+                  setActive={setActive}
+                  backToTopFun={backToTopFun}
+                />
                 <BackToTop
                   backToTop={backToTop}
                   setBackToTop={setBackToTop}
@@ -189,6 +198,8 @@ const App = (props) => {
                   <ModalContent removeModal={modalCloseHandler} />
                 </Modal>
                 <Header
+                  active={active}
+                  setActive={setActive}
                   show={show}
                   handleShow={handleShow}
                   headerSearch={showModalHandler}
@@ -200,8 +211,13 @@ const App = (props) => {
                   agent7={agent7}
                   agent6={agent6}
                   agent5={agent5}
+                  setActive={setActive}
                 />
-                <Footer />
+                <Footer
+                  active={active}
+                  setActive={setActive}
+                  backToTopFun={backToTopFun}
+                />
                 <BackToTop
                   backToTop={backToTop}
                   setBackToTop={setBackToTop}
@@ -213,6 +229,8 @@ const App = (props) => {
                   <ModalContent removeModal={modalCloseHandler} />
                 </Modal>
                 <Header
+                  active={active}
+                  setActive={setActive}
                   show={show}
                   handleShow={handleShow}
                   headerSearch={showModalHandler}
@@ -225,8 +243,13 @@ const App = (props) => {
                   property_7={property_7}
                   property_8={property_8}
                   property_9={property_9}
+                  setActive={setActive}
                 />
-                <Footer />
+                <Footer
+                  active={active}
+                  setActive={setActive}
+                  backToTopFun={backToTopFun}
+                />
                 <BackToTop
                   backToTop={backToTop}
                   setBackToTop={setBackToTop}
@@ -238,6 +261,8 @@ const App = (props) => {
                   <ModalContent removeModal={modalCloseHandler} />
                 </Modal>
                 <Header
+                  active={active}
+                  setActive={setActive}
                   show={show}
                   handleShow={handleShow}
                   headerSearch={showModalHandler}
@@ -250,8 +275,13 @@ const App = (props) => {
                   blog5={blog5}
                   blog6={blog6}
                   blog7={blog7}
+                  setActive={setActive}
                 />
-                <Footer />
+                <Footer
+                  active={active}
+                  setActive={setActive}
+                  backToTopFun={backToTopFun}
+                />
                 <BackToTop
                   backToTop={backToTop}
                   setBackToTop={setBackToTop}
@@ -263,13 +293,19 @@ const App = (props) => {
                   <ModalContent removeModal={modalCloseHandler} />
                 </Modal>
                 <Header
+                  active={active}
+                  setActive={setActive}
                   show={show}
                   handleShow={handleShow}
                   headerSearch={showModalHandler}
                   backToTopFun={backToTopFun}
                 />
-                <Contact />
-                <Footer />
+                <Contact setActive={setActive} />
+                <Footer
+                  active={active}
+                  setActive={setActive}
+                  backToTopFun={backToTopFun}
+                />
                 <BackToTop
                   backToTop={backToTop}
                   setBackToTop={setBackToTop}
@@ -281,6 +317,8 @@ const App = (props) => {
                   <ModalContent removeModal={modalCloseHandler} />
                 </Modal>
                 <Header
+                  active={active}
+                  setActive={setActive}
                   show={show}
                   handleShow={handleShow}
                   headerSearch={showModalHandler}
@@ -294,8 +332,13 @@ const App = (props) => {
                   property_7={property_7}
                   property_8={property_8}
                   property_9={property_9}
+                  setActive={setActive}
                 />
-                <Footer />
+                <Footer
+                  active={active}
+                  setActive={setActive}
+                  backToTopFun={backToTopFun}
+                />
                 <BackToTop
                   backToTop={backToTop}
                   setBackToTop={setBackToTop}
@@ -307,6 +350,8 @@ const App = (props) => {
                   <ModalContent removeModal={modalCloseHandler} />
                 </Modal>
                 <Header
+                  active={active}
+                  setActive={setActive}
                   show={show}
                   handleShow={handleShow}
                   headerSearch={showModalHandler}
@@ -319,8 +364,13 @@ const App = (props) => {
                   agent4={agent4}
                   agent5={agent5}
                   agent6={agent6}
+                  setActive={setActive}
                 />
-                <Footer />
+                <Footer
+                  active={active}
+                  setActive={setActive}
+                  backToTopFun={backToTopFun}
+                />
                 <BackToTop
                   backToTop={backToTop}
                   setBackToTop={setBackToTop}
@@ -332,6 +382,8 @@ const App = (props) => {
                   <ModalContent removeModal={modalCloseHandler} />
                 </Modal>
                 <Header
+                  active={active}
+                  setActive={setActive}
                   show={show}
                   handleShow={handleShow}
                   headerSearch={showModalHandler}
@@ -344,8 +396,13 @@ const App = (props) => {
                   propertySlide1={propertySlide1}
                   propertySlide2={propertySlide2}
                   propertySlide3={propertySlide3}
+                  setActive={setActive}
                 />
-                <Footer />
+                <Footer
+                  active={active}
+                  setActive={setActive}
+                  backToTopFun={backToTopFun}
+                />
                 <BackToTop
                   backToTop={backToTop}
                   setBackToTop={setBackToTop}
@@ -357,6 +414,8 @@ const App = (props) => {
                   <ModalContent removeModal={modalCloseHandler} />
                 </Modal>
                 <Header
+                  active={active}
+                  setActive={setActive}
                   show={show}
                   handleShow={handleShow}
                   headerSearch={showModalHandler}
@@ -368,8 +427,13 @@ const App = (props) => {
                   addProduct={addProductHandler}
                   products={products}
                   onRemoveItem={() => {}}
+                  setActive={setActive}
                 />
-                <Footer />
+                <Footer
+                  active={active}
+                  setActive={setActive}
+                  backToTopFun={backToTopFun}
+                />
                 <BackToTop
                   backToTop={backToTop}
                   setBackToTop={setBackToTop}
