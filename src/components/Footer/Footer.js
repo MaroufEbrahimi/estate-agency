@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import "./Footer.css"
 import FooterDetails from "./FooterDetails/FooterDetails"
 
-const Footer = () => {
+const Footer = (props) => {
   return (
     <div className="footer">
       <FooterDetails />
@@ -12,11 +12,39 @@ const Footer = () => {
       <div className="footer_container">
         <div className="footer_links">
           <div className="footer_private_links">
-            <Link to="/estate-agency">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/property">Property</Link>
-            <Link to="/blog">Blog</Link>
-            <Link to="/contact">Contact</Link>
+            <ul>
+              <li onClick={props.backToTopFun}>
+                <Link
+                  to="/estate-agency"
+                  onClick={() => props.setActive("/estate-agency")}
+                >
+                  Home
+                </Link>
+              </li>
+              <li onClick={props.backToTopFun}>
+                <Link to="/about" onClick={() => props.setActive("/about")}>
+                  About
+                </Link>
+              </li>
+              <li onClick={props.backToTopFun}>
+                <Link
+                  to="/property"
+                  onClick={() => props.setActive("/property")}
+                >
+                  Property
+                </Link>
+              </li>
+              <li onClick={props.backToTopFun}>
+                <Link to="/blog" onClick={() => props.setActive("/blog")}>
+                  Blog
+                </Link>
+              </li>
+              <li onClick={props.backToTopFun}>
+                <Link to="/contact" onClick={() => props.setActive("/contact")}>
+                  Contact
+                </Link>
+              </li>
+            </ul>
           </div>
 
           <div className="footer_social_links social_links">
@@ -46,7 +74,7 @@ const Footer = () => {
             © copyright <span>EstateAgency</span> all rights reserved
           </p>
           <p>
-            <span>Development by </span>
+            <span>Developed by </span>
             <a href="https://github.com/MaroufEbrahimi" target="_blank">
               MaroufEbrahimi
             </a>
