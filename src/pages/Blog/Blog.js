@@ -1,19 +1,19 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from "react"
+import { Link } from "react-router-dom"
 
-import BlogSingle from "../../components/BlogSingle/BlogSingle";
-import "./Blog.css";
+import BlogSingle from "../../components/BlogSingle/BlogSingle"
+import "./Blog.css"
 
-const Blog = ({ blog2, blog3, blog4, blog5, blog6, blog7 }) => {
+const Blog = ({ blog2, blog3, blog4, blog5, blog6, blog7, setActive }) => {
   return (
     <div className="blog">
-      <div className="blog_title">
+      <div className="blog_title every_pages_title">
         <div>
           <h1>Our Amazing Posts</h1>
           <p>Grid News</p>
         </div>
         <p>
-          <Link to="/estate-agency">
+          <Link to="/estate-agency" onClick={() => setActive("/estate-agency")}>
             <span>Home </span>
           </Link>
           / News Grid
@@ -72,6 +72,6 @@ const Blog = ({ blog2, blog3, blog4, blog5, blog6, blog7 }) => {
       </div>
     </div>
   )
-};
+}
 
-export default Blog;
+export default Blog
