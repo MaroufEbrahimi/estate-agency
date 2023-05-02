@@ -14,9 +14,12 @@
   margin-bottom: 10px;
 }
 
-.footer_private_links a {
-  margin: 8px;
+.footer_private_links ul li {
   display: inline-block;
+}
+
+.footer_private_links ul li a {
+  margin: 6px;
   line-height: 0.8em;
   text-transform: capitalize;
 }
