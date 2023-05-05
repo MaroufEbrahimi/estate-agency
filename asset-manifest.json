@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/estate-agency/static/css/main.92fc5f56.css",
-    "main.js": "/estate-agency/static/js/main.9d95e61a.js",
+    "main.css": "/estate-agency/static/css/main.67029b6d.css",
+    "main.js": "/estate-agency/static/js/main.15c97634.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/estate-agency/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/ionicons.svg?v=4.4.5": "/estate-agency/static/media/ionicons.e12b91889f20df4a39b0.svg",
     "static/media/slide-about-1.jpg": "/estate-agency/static/media/slide-about-1.597f22896e68abe29d38.jpg",
@@ -45,11 +45,11 @@
     "static/media/post-7.jpg": "/estate-agency/static/media/post-7.e493eabb0f7c6e63783a.jpg",
     "static/media/post-5.jpg": "/estate-agency/static/media/post-5.577a80c61d0cd701cbae.jpg",
     "index.html": "/estate-agency/index.html",
-    "main.92fc5f56.css.map": "/estate-agency/static/css/main.92fc5f56.css.map",
-    "main.9d95e61a.js.map": "/estate-agency/static/js/main.9d95e61a.js.map"
+    "main.67029b6d.css.map": "/estate-agency/static/css/main.67029b6d.css.map",
+    "main.15c97634.js.map": "/estate-agency/static/js/main.15c97634.js.map"
   },
   "entrypoints": [
-    "static/css/main.92fc5f56.css",
-    "static/js/main.9d95e61a.js"
+    "static/css/main.67029b6d.css",
+    "static/js/main.15c97634.js"
   ]
 }
